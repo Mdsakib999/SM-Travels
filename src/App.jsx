@@ -5,14 +5,14 @@ import { ScrollToTop } from "./utils/ScrollToTop";
 
 function App() {
   return (
-    <>
+    <div className="font-inter">
       <Navbar />
       <div className="min-h-[calc(100vh-196px)]">
         <ScrollToTop />
         <Outlet />
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 
