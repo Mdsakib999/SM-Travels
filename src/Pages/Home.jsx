@@ -1,4 +1,4 @@
-import { Banner } from "../Components/Shared/Banner";
+import { Banner } from "../Components/Banner";
 
 export const Home = () => {
   return (

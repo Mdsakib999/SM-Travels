@@ -13,7 +13,7 @@ import {
   allTravelers,
   allTrips,
   flightDetails,
-} from "../../utils/constant";
+} from "../utils/constant";
 
 export const Banner = () => {
   const [startDate, setStartDate] = useState(new Date());
