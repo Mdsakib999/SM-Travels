@@ -13,7 +13,7 @@ import {
   FaLongArrowAltRight,
 } from "react-icons/fa";
 import { CiLocationOn, CiPhone, CiClock2 } from "react-icons/ci";
-import { FooterSection } from "./FooterSection";
+import { FooterSection } from "./FooterCoulmn";
 
 export const Footer = () => {
   const socialLinks = [

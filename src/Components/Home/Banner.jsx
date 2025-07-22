@@ -102,7 +102,7 @@ export const Banner = () => {
               <select
                 value={travelers}
                 onChange={(e) => setTravelers(e.target.value)}
-                className="w-full sm:w-auto bg-gray-100 border border-gray-200 px-3 py-2.5 text-xs sm:text-sm rounded"
+                className="w-full sm:w-auto bg-gray-100 border border-gray-200 px-3 py-2.5 text-xs sm:text-sm rounded focus:outline-none focus:ring-0"
               >
                 {allTravelers.map((person, i) => (
                   <option key={i}>{person}</option>
@@ -112,7 +112,7 @@ export const Banner = () => {
               <select
                 value={classType}
                 onChange={(e) => setClassType(e.target.value)}
-                className="w-full sm:w-auto bg-orange-600 text-white px-3 py-2.5 text-xs sm:text-sm rounded"
+                className="w-full sm:w-auto bg-orange-600 text-white px-3 py-2.5 text-xs sm:text-sm rounded focus:outline-none focus:ring-0"
               >
                 {allClass.map((cls, i) => (
                   <option key={i}>{cls}</option>
