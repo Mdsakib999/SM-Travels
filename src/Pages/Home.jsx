@@ -1,4 +1,6 @@
-import { Banner } from "../Components/Banner";
+import { FlightBrands } from "../Components/Home/FlightBrands";
+import { ResortBooking } from "../Components/Home/ResortBooking";
+import { Banner } from "../Components/Home/Banner";
 
 export const Home = () => {
   return (
@@ -6,6 +8,8 @@ export const Home = () => {
       <div className="min-h-screen md:min-h-[80vh]">
         <Banner />
       </div>
+      <FlightBrands />
+      <ResortBooking />
     </div>
   );
 };
