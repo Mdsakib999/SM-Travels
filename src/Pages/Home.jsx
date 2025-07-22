@@ -1,3 +1,11 @@
+import { FlightBrands } from "../Components/FlightBrands";
+import { ResortBooking } from "../Components/ResortBooking";
+
 export const Home = () => {
-  return <div>Home Page</div>;
+  return (
+    <div>
+      <FlightBrands />
+      <ResortBooking />
+    </div>
+  );
 };

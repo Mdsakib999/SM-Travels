@@ -6,3 +6,24 @@
 .bb {
   border: 2px solid red;
 }
+@keyframes slow-glow {
+  0%,
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+.glow-circle {
+  width: 8rem;
+  height: 8rem;
+  background-color: skyblue;
+  filter: blur(30px);
+  opacity: 0.3;
+  animation: slow-glow 2s infinite;
+  position: absolute;
+}
