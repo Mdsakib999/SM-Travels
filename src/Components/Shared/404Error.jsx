@@ -1,13 +1,8 @@
 import { ArrowLeft, Home, MapPin, Compass } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Error404 = () => {
-  const handleGoHome = () => {
-    // In a real application, this would use your router
-    console.log("Navigate to home page");
-  };
-
   const handleGoBack = () => {
-    // In a real application, this would use browser history
     window.history.back();
   };
 
@@ -63,16 +58,15 @@ export const Error404 = () => {
 
         {/* Action buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <button
-            onClick={handleGoHome}
-            className="group flex items-center gap-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
-          >
-            <Home size={20} />
-            <span>Go to Home</span>
-            <div className="w-0 group-hover:w-2 transition-all duration-300 overflow-hidden">
-              →
-            </div>
-          </button>
+          <Link to="/">
+            <button className="group flex items-center gap-3 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-400 hover:to-orange-500 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+              <Home size={20} />
+              <span>Go to Home</span>
+              <div className="w-0 group-hover:w-2 transition-all duration-300 overflow-hidden">
+                →
+              </div>
+            </button>
+          </Link>
 
           <button
             onClick={handleGoBack}
