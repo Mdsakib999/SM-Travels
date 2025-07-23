@@ -167,9 +167,9 @@ export const Banner = () => {
               <input
                 type="search"
                 placeholder="search here"
-                className="outline-none bg-transparent text-black placeholder-gray-400 text-xs sm:text-sm hidden sm:block"
+                className="outline-none bg-transparent text-black placeholder-gray-400 text-xs sm:text-sm pl-3 w-11/12"
               />
-              <IoSearch size={25} className="inline-block text-orange-600 " />
+              <IoSearch size={25} className="text-orange-600" />
             </div>
           </div>
 

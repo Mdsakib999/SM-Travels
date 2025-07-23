@@ -36,7 +36,7 @@ export const TourCategories = () => {
     >
       <div className="max-w-7xl mx-auto px-4 text-center flex flex-col items-center justify-center gap-5">
         <PreHeading>Wonderful Place For You</PreHeading>
-        <h2 className="text-4xl font-extrabold text-gray-900 mb-10">
+        <h2 className="text-4xl font-extrabold text-black mb-10">
           Tour Categories
         </h2>
 
