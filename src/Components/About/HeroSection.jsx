@@ -1,12 +1,10 @@
-import React from "react";
-
 const HeroSection = () => {
   return (
     <div className="relative w-full">
       {/* Banner Image */}
       <img
         className="brightness-75 w-full h-[300px] sm:h-[400px] md:h-[600px] object-cover object-center"
-        src="/assets/about.png"
+        src="/assets/about/about.png"
         alt="Banner"
       />
 

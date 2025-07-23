@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { PreHeading } from "../Shared/PreHeading";
 import bgImg from "/assets/TourCategoriesBg.png";
-import { FaDollarSign, FaRegClock } from "react-icons/fa";
+import { FaRegClock } from "react-icons/fa";
 import { TbCurrentLocation } from "react-icons/tb";
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -96,7 +96,7 @@ export const PopularDestination = () => {
         <Swiper
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           spaceBetween={30}
-          slidesPerView={4}
+          slidesPerView={1}
           breakpoints={{
             640: {
               slidesPerView: 1,

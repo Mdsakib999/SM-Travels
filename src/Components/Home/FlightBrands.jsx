@@ -21,17 +21,22 @@ export const FlightBrands = () => {
   ];
 
   return (
-    <div className="m-4 text-center">
-      <Marquee pauseOnHover={true} speed={60} delay={1}>
+    <div className="overflow-hidden text-center mt-20 mb-32 shadow-2xl shadow-orange-200">
+      <Marquee
+        pauseOnHover={true}
+        speed={60}
+        delay={1}
+        className="overflow-hidden"
+      >
         {brands.map((brand) => (
           <div
             key={brand.id}
-            className="mx-5 p-5 rounded-lg transition duration-300 transform hover:scale-105"
+            className="p-5 rounded-lg transition duration-300 transform hover:scale-105 mx-4"
           >
             <img
               src={brand.logo}
               alt={brand.name}
-              className="w-32 h-18 object-contain"
+              className="w-32 h-20 object-contain"
               loading="lazy"
               decoding="async"
               fetchPriority="low"

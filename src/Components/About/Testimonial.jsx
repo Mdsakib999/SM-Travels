@@ -101,7 +101,7 @@ const Testimonial = () => {
 
       {/* Decorative Bottom Left Image */}
       <img
-        src="./assets/travel.png"
+        src="./assets/about/travel.png"
         alt="Decoration"
         className="absolute bottom-0 left-0 w-32 md:w-48"
       />

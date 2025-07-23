@@ -5,7 +5,7 @@ const Trends = () => {
         {/* Image Section */}
         <div className="w-full md:w-1/2">
           <img
-            src="./assets/leftImage.png"
+            src="./assets/about/leftImage.png"
             alt="Popular Tour Plans"
             className="w-96"
           />
@@ -26,17 +26,17 @@ const Trends = () => {
           </p>
           <div className="flex justify-center md:justify-start items-center gap-4 sm:gap-6 lg:gap-8 mt-8">
             <img
-              src="./assets/vacation.png"
+              src="./assets/about/vacation.png"
               alt="Vacation Tours"
               className="w-16 h-16 sm:w-28 sm:h-28 object-contain hover:scale-105 transition-transform"
             />
             <img
-              src="./assets/Honeymoon.png"
+              src="./assets/about/Honeymoon.png"
               alt="Honeymoon Packages"
               className="w-16 h-16 sm:w-28 sm:h-28 object-contain hover:scale-105 transition-transform"
             />
             <img
-              src="./assets/event.png"
+              src="./assets/about/event.png"
               alt="Event Tours"
               className="w-16 h-16 sm:w-28 sm:h-28 object-contain hover:scale-105 transition-transform"
             />

@@ -11,8 +11,8 @@ export const Home = () => {
       <div className="min-h-screen md:min-h-[80vh]">
         <Banner />
       </div>
-      <FlightBrands />
       <ResortBooking />
+      <FlightBrands />
       <SuccessRate />
       <TourCategories />
       <PopularDestination />
