@@ -17,7 +17,7 @@ import { FooterSection } from "./FooterCoulmn";
 
 export const Footer = () => {
   const socialLinks = [
-    { Icon: FaFacebookF, color: "hover:bg-blue-600" },
+    { Icon: FaFacebookF, color: "hover:bg-blue-500" },
     { Icon: FaTwitter, color: "hover:bg-blue-800" },
     { Icon: FaInstagram, color: "hover:bg-pink-600" },
     { Icon: FaYoutube, color: "hover:bg-red-600" },
@@ -106,7 +106,7 @@ export const Footer = () => {
             {socialLinks.map(({ Icon, color }, i) => (
               <div
                 key={i}
-                className={` lg:h-8  lg:w-full md:h-12 md:w-12 rounded-full border border-zinc-600 flex items-center justify-center hover:border-orange-400 ${color} transition-all duration-300 cursor-pointer group p-2`}
+                className={`lg:h-8 lg:w-8 md:h-12 md:w-12 rounded-full border border-zinc-600 flex items-center justify-center hover:border-white ${color} transition-all duration-300 cursor-pointer group p-2`}
               >
                 <Icon size={16} className="group-hover:text-white" />
               </div>

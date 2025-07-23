@@ -7,7 +7,8 @@
 .bb {
   border: 2px solid red;
 }
-<<<<<<< HEAD
+
+
 @keyframes slow-glow {
   0%,
   100% {
@@ -28,9 +29,8 @@
   opacity: 0.3;
   animation: slow-glow 2s infinite;
   position: absolute;
-=======
+}
 
 @theme {
   --font-inter: "Inter", "sans-serif"; 
->>>>>>> 15680cf32fc2973a302dbebb0c0dbd0decfea212
 }

@@ -74,7 +74,7 @@ export const Banner = () => {
               {allTrips.map((type) => (
                 <label
                   key={type}
-                  className={`flex items-center gap-x-2 px-3 py-1.5 rounded cursor-pointer text-xs sm:text-sm ${
+                  className={`flex items-center gap-x-2 px-5 py-2.5 rounded cursor-pointer text-xs sm:text-sm ${
                     tripType === type
                       ? "bg-orange-600 text-white"
                       : "bg-gray-200"
@@ -178,7 +178,7 @@ export const Banner = () => {
             {allFares.map((fare) => (
               <label
                 key={fare}
-                className={`flex items-center gap-x-2 px-3 py-1.5 rounded cursor-pointer text-xs sm:text-sm ${
+                className={`flex items-center gap-x-2 px-5 py-2.5 rounded cursor-pointer text-xs sm:text-sm ${
                   fareType === fare ? "bg-orange-600 text-white" : "bg-gray-200"
                 }`}
               >
