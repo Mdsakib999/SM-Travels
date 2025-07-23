@@ -2,6 +2,7 @@ import { FlightBrands } from "../Components/Home/FlightBrands";
 import { ResortBooking } from "../Components/Home/ResortBooking";
 import { Banner } from "../Components/Home/Banner";
 import { SuccessRate } from "../Components/Home/SuccessRate";
+import { TourCategories } from "../Components/Home/TourCategories";
 
 export const Home = () => {
   return (
@@ -12,6 +13,7 @@ export const Home = () => {
       <FlightBrands />
       <ResortBooking />
       <SuccessRate />
+      <TourCategories />
     </div>
   );
 };

@@ -28,6 +28,29 @@
   animation: slow-glow 2s infinite;
   position: absolute;
 }
+.swiper-pagination-bullet {
+  width: 14px !important;
+  height: 14px !important;
+  background-color: transparent !important;
+  border: 2px solid #1db3d3 !important;
+  border-radius: 9999px; /* Full circle */
+  opacity: 100;
+  transition: all 0.3s ease;
+  margin: 0 12px !important; /* adjust spacing */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #1db3d3 !important;
+  border-color: #1db3d3 !important;
+}
+@media (max-width: 640px) {
+  .swiper-pagination-bullet {
+    width: 10px !important;
+    height: 10px !important;
+    margin: 0 4px !important;
+  }
+}
+
 @theme {
   --font-inter: "Inter", "sans-serif";
 }
