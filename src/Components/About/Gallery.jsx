@@ -16,7 +16,7 @@ const Gallery = () => {
           <div className="relative">
             <img
               className="w-full h-full rounded-lg object-cover brightness-75 hover:brightness-50 duration-500"
-              src="./assets/img1.jpg"
+              src="./assets/about/img1.jpg"
               alt="France"
             />
             <div className="absolute bottom-0 left-0 right-0 text-white text-sm p-2 flex justify-between rounded-b-lg">
@@ -27,7 +27,7 @@ const Gallery = () => {
           <div className="relative">
             <img
               className="w-full h-full rounded-lg object-cover brightness-75 hover:brightness-50 duration-500"
-              src="./assets/img2.jpg"
+              src="./assets/about/img2.jpg"
               alt="Switzerland"
             />
             <div className="absolute bottom-0 left-0 right-0 text-white text-sm p-2 flex justify-between rounded-b-lg">
@@ -38,7 +38,7 @@ const Gallery = () => {
           <div className="relative">
             <img
               className="w-full h-full rounded-lg object-cover brightness-75 hover:brightness-50 duration-500"
-              src="./assets/img3.jpg"
+              src="./assets/about/img3.jpg"
               alt="France"
             />
             <div className="absolute bottom-0 left-0 right-0 text-white  text-sm p-2 flex justify-between rounded-b-lg">
@@ -53,7 +53,7 @@ const Gallery = () => {
           <div className="relative">
             <img
               className="w-full h-full rounded-lg object-cover brightness-75 hover:brightness-50 duration-500"
-              src="./assets/img4.jpg"
+              src="./assets/about/img4.jpg"
               alt="Switzerland"
             />
             <div className="absolute bottom-0 left-0 right-0 text-white  text-sm p-2 flex justify-between rounded-b-lg">
@@ -75,7 +75,7 @@ const Gallery = () => {
           <div className="relative">
             <img
               className="w-full h-full rounded-lg object-cover brightness-75 hover:brightness-50 duration-500"
-              src="./assets/img6.jpg"
+              src="./assets/about/img6.jpg"
               alt="Switzerland"
             />
             <div className="absolute bottom-0 left-0 right-0 text-white  text-sm p-2 flex justify-between rounded-b-lg">
@@ -101,7 +101,7 @@ const Gallery = () => {
           <div className="relative">
             <img
               className="w-full h-full rounded-lg object-cover brightness-75 hover:brightness-50 duration-500"
-              src="./assets/img8.jpg"
+              src="./assets/about/img8.jpg"
               alt="Switzerland"
             />
             <div className="absolute bottom-0 left-0 right-0 text-white  text-sm p-2 flex justify-between rounded-b-lg">
@@ -112,7 +112,7 @@ const Gallery = () => {
           <div className="relative">
             <img
               className="w-full h-96 rounded-lg object-cover brightness-75 hover:brightness-50 duration-500"
-              src="./assets/img9.jpg"
+              src="./assets/about/img9.jpg"
               alt="France"
             />
             <div className="absolute bottom-0 left-0 right-0 text-white  text-sm p-2 flex justify-between rounded-b-lg">
@@ -127,7 +127,7 @@ const Gallery = () => {
           <div className="relative">
             <img
               className="w-full h-full rounded-lg object-cover brightness-75 hover:brightness-50 duration-500"
-              src="./assets/img10.jpg"
+              src="./assets/about/img10.jpg"
               alt="Switzerland"
             />
             <div className="absolute bottom-0 left-0 right-0 text-white  text-sm p-2 flex justify-between rounded-b-lg">
@@ -149,7 +149,7 @@ const Gallery = () => {
           <div className="relative">
             <img
               className="w-full h-full rounded-lg object-cover brightness-75 hover:brightness-50 duration-500"
-              src="./assets/img12.jpg"
+              src="./assets/about/img12.jpg"
               alt="Switzerland"
             />
             <div className="absolute bottom-0 left-0 right-0 text-white  text-sm p-2 flex justify-between rounded-b-lg">

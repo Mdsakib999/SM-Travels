@@ -6,19 +6,19 @@ const slides = [
     title: "We Provide You Best Europe Sightseeing Tours",
     description:
       "Discover the beauty of Europe with our expertly curated sightseeing tours. From iconic landmarks to hidden gems, we offer the best experiences at unbeatable prices — making every trip memorable and hassle-free.",
-    image: "/assets/about1.webp",
+    image: "/assets/about/about1.webp",
   },
   {
     title: "Explore Hidden Wonders Across Europe",
     description:
       "Travel beyond the obvious! Dive into cultures, cuisines, and hidden wonders across Europe. Our guided tours are designed to offer immersive experiences at every stop.",
-    image: "/assets/about2.webp",
+    image: "/assets/about/about2.webp",
   },
   {
     title: "Unforgettable European Adventures Await",
     description:
       "Whether it's the Alps, the Mediterranean coast, or medieval towns, we’ve got your journey covered with expert guides and personalized itineraries.",
-    image: "/assets/about3.avif",
+    image: "/assets/about/about3.avif",
   },
 ];
 
@@ -96,7 +96,7 @@ const Promotion = () => {
           >
             {/* Background swirl */}
             <img
-              src="/assets/aboutBgStyle.png"
+              src="/assets/about/aboutBgStyle.png"
               alt=""
               aria-hidden="true"
               className="absolute w-[90%] h-[90%] md:w-[100%] md:h-[100%] object-cover z-0 rotate-6"
@@ -104,7 +104,7 @@ const Promotion = () => {
 
             {/* Circle frame */}
             <img
-              src="/assets/circle.png"
+              src="/assets/about/circle.png"
               alt=""
               aria-hidden="true"
               className="absolute w-[95%] h-[95%] z-10"

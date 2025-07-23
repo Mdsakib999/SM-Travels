@@ -5,7 +5,7 @@ const MidBanner = () => {
     <div className="relative my-8 w-full min-h-[200px] sm:min-h-[300px] md:min-h-[400px] lg:min-h-[500px]">
       <img
         className="w-full h-full min-h-80 object-cover brightness-50"
-        src="/assets/aboutWomen.png"
+        src="/assets/about/aboutWomen.png"
         alt="midBanner"
       />
       <div className="absolute inset-0 flex items-center justify-center">
