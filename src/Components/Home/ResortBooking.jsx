@@ -7,7 +7,7 @@ import AeroplaneImg from "/assets/Aeroplane.png";
 import HawaiiImg from "/assets/Hawaii.jpg";
 import backgroundElement from "/assets/BackgroundElement.png";
 import RomeImg from "/assets/Rome.jpg";
-
+import { PreHeading } from "../Shared/PreHeading";
 export const ResortBooking = () => {
   const menuItems = [
     {
@@ -40,7 +40,7 @@ export const ResortBooking = () => {
   ];
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-6 py-16 my-20">
+    <div className="w-full max-w-6xl mx-auto px-6 py-16 my-20 overflow-hidden">
       <div className="flex flex-col lg:flex-row justify-around gap-10">
         <div className="relative w-full h-full flex justify-center items-center order-1 md:order-2">
           {/* Card */}
@@ -135,9 +135,7 @@ export const ResortBooking = () => {
         </div>
 
         <div className="space-y-6 order-2 md:order-1">
-          <div className="bg-orange-100 border border-orange-500 rounded-full px-4 py-2 w-fit">
-            <h6 className="text-orange-500 text-sm font-bold">Fast & Easy</h6>
-          </div>
+          <PreHeading>Fast & Easy</PreHeading>
           <h2 className="text-4xl font-extrabold text-gray-800 leading-snug">
             Get Your Favourite <br /> Resort Bookings
           </h2>
@@ -146,7 +144,7 @@ export const ResortBooking = () => {
             {menuItems.map((item) => (
               <div key={item.id} className="flex gap-4">
                 <div
-                  className={`w-12 h-12 flex items-center justify-center rounded-md ${item.bgColor}`}
+                  className={`w-18 h-12 flex items-center justify-center rounded-md ${item.bgColor}`}
                 >
                   {item.icon}
                 </div>
