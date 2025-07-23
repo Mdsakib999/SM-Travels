@@ -34,7 +34,7 @@ export const FlightBrands = () => {
               className="w-32 h-18 object-contain"
               loading="lazy"
               decoding="async"
-              fetchpriority="low"
+              fetchPriority="low"
             />
           </div>
         ))}
