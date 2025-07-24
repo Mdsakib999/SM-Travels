@@ -1,9 +1,30 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { PreHeading } from "../Shared/PreHeading";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+
+const useResponsiveSpacing = (map) => {
+  const [spacing, setSpacing] = useState(map.lg);
+
+  useEffect(() => {
+    const updateSpacing = () => {
+      const width = window.innerWidth;
+      if (width < 768) setSpacing(map.sm);
+      else if (width < 1024) setSpacing(map.md);
+      else setSpacing(map.lg);
+    };
+
+    updateSpacing();
+    window.addEventListener("resize", updateSpacing);
+    return () => window.removeEventListener("resize", updateSpacing);
+  }, [map]);
+
+  return spacing;
+};
 
 export const TopDestination = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  const spacingMap = { sm: 100, md: 160, lg: 230 };
+  const spacing = useResponsiveSpacing(spacingMap);
 
   const menuItems = [
     {
@@ -42,7 +63,6 @@ export const TopDestination = () => {
     const diff = index - currentIndex;
     const totalCards = menuItems.length;
 
-    // Normalize difference to be between -2 and 2
     let normalizedDiff = diff;
     if (Math.abs(diff) > totalCards / 2) {
       normalizedDiff = diff > 0 ? diff - totalCards : diff + totalCards;
@@ -58,7 +78,7 @@ export const TopDestination = () => {
         Popular Destination
       </h2>
 
-      <div className="relative w-full max-w-5xl mx-auto h-[450px] my-10">
+      <div className="relative w-full max-w-6xl mx-auto h-[450px] my-10 overflow-hidden">
         <div className="relative w-full h-full flex items-center justify-center">
           {menuItems.map((item, index) => {
             const position = getCardPosition(index);
@@ -75,7 +95,7 @@ export const TopDestination = () => {
                 }`}
                 style={{
                   transform: `
-                    translateX(${position * 120}px) 
+                    translateX(${position * spacing}px)
                     scale(${
                       isCenter ? 1 : Math.abs(position) === 1 ? 0.9 : 0.8
                     }) 
@@ -90,8 +110,10 @@ export const TopDestination = () => {
                 }}
               >
                 <div
-                  className={`relative rounded-3xl overflow-hidden shadow-2xl ${
-                    isCenter ? "w-80 h-[500px]" : "w-72 max-h-[470px]"
+                  className={`relative rounded-3xl overflow-hidden ${
+                    isCenter
+                      ? "w-64 md:w-80 h-96 lg:h-[450px]"
+                      : "w-56 md:w-72 h-80 lg:h-[420px]"
                   }`}
                 >
                   <img
@@ -99,23 +121,19 @@ export const TopDestination = () => {
                     alt={item.title}
                     className="w-full h-full object-cover"
                   />
-
-                  {/* Gradient overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-
-                  {/* Content overlay */}
                   <div className="absolute inset-0 flex flex-col justify-end p-6 text-white">
                     <div className="flex justify-between">
                       <div className="flex flex-col">
                         <h3
-                          className={`font-bold ${
+                          className={`font-bold self-start ${
                             isCenter ? "text-2xl" : "text-xl"
                           }`}
                         >
                           {item.title}
                         </h3>
                         <p
-                          className={`opacity-90 ${
+                          className={`opacity-90 self-start${
                             isCenter ? "text-base" : "text-sm"
                           }`}
                         >
@@ -124,7 +142,7 @@ export const TopDestination = () => {
                       </div>
 
                       {isCenter && (
-                        <button className="mt-4 px-6 py-2 border-2 border-white/80 rounded-full text-sm font-medium hover:bg-white/20 transition-colors self-start">
+                        <button className="mt-4 px-2 md:px-6 py-1 md:py-2 border-2 border-white/80 rounded-full text-xs md:text-sm font-medium hover:bg-white/20 transition-colors self-start whitespace-nowrap">
                           View All →
                         </button>
                       )}
