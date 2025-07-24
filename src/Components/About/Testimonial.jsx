@@ -52,7 +52,7 @@ const Testimonial = () => {
     <div className="relative max-w-7xl mx-auto px-4 my-20">
       {/* Background Image */}
       <img
-        src="./assets/aboutBG.png"
+        src="./assets/about/aboutBG.png"
         alt="Background"
         className="w-full h-[600px] object-cover rounded-xl"
       />
