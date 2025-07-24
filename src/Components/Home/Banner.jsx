@@ -160,7 +160,7 @@ export const Banner = ({ bannerImage }) => {
                 dateFormat="dd MMM yyyy"
                 className="w-full outline-none text-xs sm:text-sm"
               />
-              <p className="text-xs text-gray-500">Return</p>
+              <p className="text-xs text-gray-500">Arrival</p>
             </div>
 
             <div className="flex items-center justify-center sm:justify-start border border-gray-300 rounded px-2 py-2 w-full">
