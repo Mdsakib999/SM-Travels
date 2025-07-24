@@ -4,7 +4,7 @@ import boatImg from "/assets/Testomonials/boat.jpg";
 import loveSvg from "/assets/Testomonials/Frame85.png";
 import { FaStar } from "react-icons/fa";
 
-export const Testomonial = () => {
+export const Testimonial = () => {
   return (
     <div
       className="relative bg-cover bg-center bg-no-repeat min-h-[600px] lg:min-h-[700px] flex items-center justify-center px-4 sm:px-6"
