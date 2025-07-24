@@ -31,7 +31,7 @@ export const TopDestination = () => {
       id: 1,
       title: "Thailand",
       listing: "22 Listing",
-      img: "/assets/TopDestination/Island.jpg",
+      img: "/assets/TopDestination/Thiland.jpg",
     },
     {
       id: 2,
@@ -43,19 +43,19 @@ export const TopDestination = () => {
       id: 3,
       title: "Maldives",
       listing: "22 Listing",
-      img: "/assets/TopDestination/Thiland.jpg",
+      img: "/assets/TopDestination/Maldives.jpg",
     },
     {
       id: 4,
       title: "Island",
       listing: "22 Listing",
-      img: "/assets/TopDestination/Maldives.jpg",
+      img: "/assets/TopDestination/Island.jpg",
     },
     {
       id: 5,
-      title: "Bali",
+      title: "Belgium",
       listing: "22 Listing",
-      img: "/assets/TopDestination/Island.jpg",
+      img: "/assets/TopDestination/Belgium.jpg",
     },
   ];
 
@@ -72,7 +72,7 @@ export const TopDestination = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 text-center flex flex-col items-center justify-center gap-5 py-16">
+    <div className="max-w-7xl mx-auto px-4 text-center flex flex-col items-center justify-center gap-5 py-16 my-20">
       <PreHeading>Top Destination</PreHeading>
       <h2 className="text-4xl font-extrabold text-black mb-10">
         Popular Destination

@@ -6,7 +6,6 @@ import { RiHotelFill } from "react-icons/ri";
 import { BsPassportFill } from "react-icons/bs";
 import { BiSolidPlaneAlt } from "react-icons/bi";
 import { FaMoneyBillWave } from "react-icons/fa6";
-import "react-datepicker/dist/react-datepicker.css";
 import {
   allClass,
   allFares,
@@ -41,7 +40,7 @@ export const Banner = ({ bannerImage }) => {
           </p>
         </header>
 
-        <section className="bg-white space-y-5 sm:space-y-8 rounded-xl shadow-2xl shadow-gray-300 text-black p-4 sm:p-6 md:p-10">
+        <section className="bg-white space-y-5 sm:space-y-8 rounded-xl shadow-lg text-black p-4 sm:p-6 md:p-10">
           {/* Category Icons */}
           <ul className="flex flex-wrap justify-center sm:justify-start items-center gap-4 pb-3 border-b">
             <li className="flex items-center gap-x-2">
