@@ -9,9 +9,7 @@ import { customStyles } from "../../utils/customStyle";
 const FeaturedTours = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-10 lg:pt-0">
-      {/* Inject custom CSS */}
       <style>{customStyles}</style>
-
       <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-start">
         Our Featured Tours
       </h2>
@@ -25,8 +23,8 @@ const FeaturedTours = () => {
         autoplay={{ delay: 2000 }}
         pagination={{
           clickable: true,
-          dynamicBullets: true, // Show fewer bullets for a cleaner look
-          dynamicMainBullets: 3, // Show 3 main bullets (active + 1 on each side)
+          dynamicBullets: true,
+          dynamicMainBullets: 3,
         }}
         spaceBetween={20}
         breakpoints={{
