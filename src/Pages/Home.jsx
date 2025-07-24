@@ -4,6 +4,7 @@ import { Banner } from "../Components/Home/Banner";
 import { SuccessRate } from "../Components/Home/SuccessRate";
 import { TourCategories } from "../Components/Home/TourCategories";
 import { PopularDestination } from "../Components/Home/PopularDestination";
+import { TopDestination } from "../Components/Home/TopDestination";
 
 export const Home = () => {
   return (
@@ -16,6 +17,7 @@ export const Home = () => {
       <SuccessRate />
       <TourCategories />
       <PopularDestination />
+      <TopDestination />
     </div>
   );
 };
