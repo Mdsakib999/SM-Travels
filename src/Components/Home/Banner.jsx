@@ -1,12 +1,12 @@
-import { BiSolidPlaneAlt } from "react-icons/bi";
-import { RiHotelFill, RiArrowLeftRightLine } from "react-icons/ri";
-import { FaTree } from "react-icons/fa";
-import { BsPassportFill } from "react-icons/bs";
-import { FaMoneyBillWave } from "react-icons/fa6";
-import { IoSearch } from "react-icons/io5";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
 import { useState } from "react";
+import { FaTree } from "react-icons/fa";
+import DatePicker from "react-datepicker";
+import { IoSearch } from "react-icons/io5";
+import { RiHotelFill } from "react-icons/ri";
+import { BsPassportFill } from "react-icons/bs";
+import { BiSolidPlaneAlt } from "react-icons/bi";
+import { FaMoneyBillWave } from "react-icons/fa6";
+import "react-datepicker/dist/react-datepicker.css";
 import {
   allClass,
   allFares,
@@ -15,7 +15,7 @@ import {
   flightDetails,
 } from "../../utils/constant.js";
 
-export const Banner = () => {
+export const Banner = ({ bannerImage }) => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
   const [travelers, setTravelers] = useState(allTravelers[0]);
@@ -24,10 +24,10 @@ export const Banner = () => {
   const [fareType, setFareType] = useState(allFares[0]);
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full mb-[550px] sm:mb-[350px] lg:mb-60">
       <img
         className="brightness-75 w-full h-[300px] sm:h-[400px] md:h-[400px] object-cover object-center"
-        src="/assets/homeBanner.png"
+        src={bannerImage}
         alt="Banner"
       />
       <div className="absolute top-[35%] left-1/2 transform -translate-x-1/2 w-full max-w-7xl px-2 sm:px-4">

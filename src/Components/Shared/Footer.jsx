@@ -92,7 +92,7 @@ export const Footer = () => {
 
           <div className="flex items-center bg-white rounded-full overflow-hidden h-10 w-full max-w-sm relative">
             <input
-              type="text"
+              type="email"
               placeholder="Enter your mail"
               className="flex-grow px-5 text-sm text-gray-700 placeholder-gray-500 outline-none bg-transparent"
             />
@@ -103,6 +103,7 @@ export const Footer = () => {
 
           {/* Social Links */}
           <div className="flex space-x-3 mt-6 text-gray-400 text-lg">
+            // eslint-disable-next-line no-unused-vars, no-unused-vars
             {socialLinks.map(({ Icon, color }, i) => (
               <div
                 key={i}
