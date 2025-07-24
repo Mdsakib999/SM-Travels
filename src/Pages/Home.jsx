@@ -5,7 +5,8 @@ import { SuccessRate } from "../Components/Home/SuccessRate";
 import { TourCategories } from "../Components/Home/TourCategories";
 import { PopularDestination } from "../Components/Home/PopularDestination";
 import { TopDestination } from "../Components/Home/TopDestination";
-import { Testomonial } from "../Components/Home/Testomonial";
+import { Testimonial } from "../Components/Home/Testimonial";
+import { FlightSearch } from "../Components/Home/FlightSearch";
 
 export const Home = () => {
   return (
@@ -19,7 +20,8 @@ export const Home = () => {
       <TourCategories />
       <PopularDestination />
       <TopDestination />
-      <Testomonial />
+      <FlightSearch />
+      <Testimonial />
     </div>
   );
 };
