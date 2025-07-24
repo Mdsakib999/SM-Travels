@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 import FooterImage from "/assets/FooterImg.png";
 import AmericanexpressImg from "/assets/AmericanExpress.png";
 import MastercardImg from "/assets/MasterCard.png";
@@ -103,7 +105,6 @@ export const Footer = () => {
 
           {/* Social Links */}
           <div className="flex space-x-3 mt-6 text-gray-400 text-lg">
-            // eslint-disable-next-line no-unused-vars, no-unused-vars
             {socialLinks.map(({ Icon, color }, i) => (
               <div
                 key={i}
