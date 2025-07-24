@@ -33,7 +33,7 @@ export const SuccessRate = () => {
   return (
     <div
       ref={ref}
-      className="relative max-w-7xl mx-auto py-5 min-h-[600px] md:flex md:items-center md:justify-center"
+      className="relative max-w-7xl mx-auto py-5 min-h-[600px] md:flex md:items-center md:justify-center my-20"
     >
       {/* Background Shapes */}
       <img src={shape1} alt="" className="absolute top-0 left-0" />

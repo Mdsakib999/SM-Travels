@@ -41,7 +41,7 @@ export const ResortBooking = () => {
   ];
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-6 py-16 my-20 overflow-x-hidden md:overflow-visible relative">
+    <div className="w-full max-w-6xl mx-auto px-6  my-20 overflow-x-hidden md:overflow-visible relative">
       <div className="flex flex-col lg:flex-row justify-around gap-10">
         <div className="relative w-full h-full flex justify-center items-center order-1 md:order-2">
           {/* Card */}
