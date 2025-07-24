@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { Star } from "lucide-react";
-import { hotelsData } from "../../utils/popularHotel";
+import { internationalHotelsData } from "../../utils/popularHotel";
 
-const PopularHotel = () => {
-  const tabs = Object.keys(hotelsData);
+const PopularTour = () => {
+  const tabs = Object.keys(internationalHotelsData);
   const [activeTab, setActiveTab] = useState(tabs[0]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-16">
       <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-6 text-start">
-        Popular Hotel’s In Bangladesh
+        Popular Tour's Destination
       </h2>
 
       {/* Tabs */}
@@ -31,7 +31,7 @@ const PopularHotel = () => {
 
       {/* Cards */}
       <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-        {hotelsData[activeTab].map((hotel, index) =>
+        {internationalHotelsData[activeTab].map((hotel, index) =>
           hotel.isMoreCard ? (
             <div
               key={index}
@@ -90,4 +90,4 @@ const PopularHotel = () => {
   );
 };
 
-export default PopularHotel;
+export default PopularTour;
