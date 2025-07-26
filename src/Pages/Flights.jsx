@@ -5,7 +5,7 @@ import { FlightResultPage } from "../Components/Flights/FlightResultPage";
 export const Flights = () => {
   return (
     <div>
-      <div className="min-h-screen md:min-h-[80vh]">
+      <div className="min-h-screen md:min-h-[40vh]">
         <FlightBanner />
       </div>
       <Availability />
