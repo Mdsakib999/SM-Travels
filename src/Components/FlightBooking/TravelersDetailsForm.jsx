@@ -3,7 +3,7 @@ import {
   countryOptions,
   nationalityOptions,
   titleOptions,
-} from "../../utils/FlightBookingOptions";
+} from "../../FakeDb/FlightBookingOptions";
 import { Link } from "react-router-dom";
 import { Minus, Plus } from "lucide-react";
 
