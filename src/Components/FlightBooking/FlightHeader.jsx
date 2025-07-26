@@ -10,8 +10,6 @@ export const Flightheader = ({ flight }) => {
     ? flight.timings[flight.timings.length - 1]
     : flight.timings;
 
-  // Combine durations — here just joining durations for simplicity,
-  // you can replace with real total calculation if needed
   const totalDuration = Array.isArray(flight.timings)
     ? flight.timings.map((t) => t.duration).join(", ")
     : flight.timings.duration;
@@ -19,15 +17,15 @@ export const Flightheader = ({ flight }) => {
   const stopsCount = flight.stops?.onward + flight.stops?.return || 0;
 
   return (
-    <header className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 p-4 bg-white rounded-lg shadow-sm">
+    <header className="flex flex-col md:flex-row md:items-center gap-3 md:gap-4 p-4 bg-white rounded-lg shadow-sm">
       <Plane size={60} className="text-orange-600 shrink-0" />
       <div className="min-w-0">
-        <h1 className="flex flex-col sm:flex-row sm:items-center gap-2 text-lg md:text-2xl font-bold text-gray-900">
+        <h1 className="flex md:items-center gap-2 text-lg md:text-2xl font-bold text-gray-900">
           <span className="truncate">{firstSegment.from.split("\n")[0]}</span>
-          <ArrowRight className="hidden sm:block shrink-0" size={24} />
+          <ArrowRight className="shrink-0" size={24} />
           <span className="truncate">{lastSegment.to.split("\n")[0]}</span>
         </h1>
-        <p className="text-sm sm:text-base text-gray-600 mt-1">
+        <p className="text-sm md:text-base text-gray-600 mt-1">
           {firstSegment.departDate} • {stopsCount} Stop
           {stopsCount !== 1 ? "s" : ""} • {totalDuration}
         </p>
