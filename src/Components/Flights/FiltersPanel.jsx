@@ -5,15 +5,15 @@ import { CustomCheckbox } from "../Shared/CustomCheckbox";
 import { StopButton } from "../Shared/StopButton";
 
 export const FiltersPanel = () => {
-  const [priceRange, setPriceRange] = useState(1100);
+  const [priceRange, setPriceRange] = useState(0);
   const [selectedFilters, setSelectedFilters] = useState({
-    refundableFare: true,
+    refundableFare: false,
     oneStop: false,
     lateDeparture: false,
     nonStop: false,
   });
-  const [onwardStopType, setOnwardStopType] = useState("Direct");
-  const [returnStopType, setReturnStopType] = useState("Direct");
+  const [onwardStopType, setOnwardStopType] = useState("");
+  const [returnStopType, setReturnStopType] = useState("");
   const [selectedAirlines, setSelectedAirlines] = useState([]);
   const [selectedAirports, setSelectedAirports] = useState([]);
 

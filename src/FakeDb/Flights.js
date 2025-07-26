@@ -1,5 +1,6 @@
 export const dummyFlights = [
     {
+        id: 1,
         airline: "Philippines Airline",
         code: "PA - 5620",
         travelClass: "Economy",
@@ -10,19 +11,22 @@ export const dummyFlights = [
         arrivalAirport: "New York",
         stops: {
             onward: 1,
-            return: 0
+            return: 0,
         },
-        timings: {
-            departTime: "14:50",
-            arriveTime: "07:35",
-            duration: "10hr 35min",
-            departDate: "Sun, 29 Jan 2025",
-            arriveDate: "Mon, 30 Jan 2025",
-            from: "BOM - Terminal 2\nMumbai, India",
-            to: "JFK - Terminal 2\nNew York, USA",
-        },
+        timings: [
+            {
+                departTime: "14:50",
+                arriveTime: "07:35",
+                duration: "10hr 35min",
+                departDate: "Sun, 29 Jan 2025",
+                arriveDate: "Mon, 30 Jan 2025",
+                from: "BOM - Terminal 2\nMumbai, India",
+                to: "JFK - Terminal 2\nNew York, USA",
+            },
+        ],
     },
     {
+        id: 2,
         airline: "Blogzine Airline",
         code: "FFR - 5682",
         travelClass: "Economy",
@@ -32,20 +36,56 @@ export const dummyFlights = [
         departureAirport: "Mumbai",
         arrivalAirport: "New York",
         stops: {
-            onward: 0,
-            return: 1
+            onward: 1,
+            return: 1,
         },
-        timings: {
-            departTime: "15:10",
-            arriveTime: "08:45",
-            duration: "10hr 35min",
-            departDate: "Sun, 29 Jan 2025",
-            arriveDate: "Mon, 30 Jan 2025",
-            from: "BOM - Terminal 1\nMumbai, India",
-            to: "JFK - Terminal 4\nNew York, USA",
+        layover: {
+            location: "Paris, France",
+            duration: "3h 15m",
         },
+        timings: [
+            {
+                from: "BOM - Terminal 2\nMumbai, India",
+                to: "CDG - Terminal 2E\nParis, France",
+                departTime: "14:50",
+                arriveTime: "11:50",
+                departDate: "Sun, 29 Jan 2025",
+                arriveDate: "Sun, 29 Jan 2025",
+                duration: "9hr 50min",
+            },
+            {
+                from: "CDG - Terminal 2E\nParis, France",
+                to: "JFK - Terminal 4\nNew York, USA",
+                departTime: "15:05",
+                arriveTime: "07:35",
+                departDate: "Sun, 29 Jan 2025",
+                arriveDate: "Mon, 30 Jan 2025",
+                duration: "8hr 30min",
+            },
+        ],
+        returnTimings: [
+            {
+                from: "JFK - Terminal 4\nNew York, USA",
+                to: "CDG - Terminal 2E\nParis, France",
+                departTime: "10:00",
+                arriveTime: "22:00",
+                departDate: "Fri, 5 Feb 2025",
+                arriveDate: "Sat, 6 Feb 2025",
+                duration: "7hr 0min",
+            },
+            {
+                from: "CDG - Terminal 2E\nParis, France",
+                to: "BOM - Terminal 2\nMumbai, India",
+                departTime: "23:30",
+                arriveTime: "11:00",
+                departDate: "Sat, 6 Feb 2025",
+                arriveDate: "Sun, 7 Feb 2025",
+                duration: "8hr 30min",
+            },
+        ],
     },
     {
+        id: 3,
         airline: "Wizxio Airline",
         code: "SA - 1254",
         travelClass: "Business",
@@ -56,19 +96,23 @@ export const dummyFlights = [
         arrivalAirport: "New York",
         stops: {
             onward: 0,
-            return: 0
+            return: 0,
         },
-        timings: {
-            departTime: "16:30",
-            arriveTime: "07:10",
-            duration: "10hr 40min",
-            departDate: "Sun, 29 Jan 2025",
-            arriveDate: "Mon, 30 Jan 2025",
-            from: "DEL - Terminal 3\nDelhi, India",
-            to: "JFK - Terminal 1\nNew York, USA",
-        },
+        timings: [
+            {
+                departTime: "16:30",
+                arriveTime: "07:10",
+                duration: "10hr 40min",
+                departDate: "Sun, 29 Jan 2025",
+                arriveDate: "Mon, 30 Jan 2025",
+                from: "DEL - Terminal 3\nDelhi, India",
+                to: "JFK - Terminal 1\nNew York, USA",
+            },
+        ],
     },
+
     {
+        id: 4,
         airline: "Folioo Airline",
         code: "CCE - 2158",
         travelClass: "Economy",
@@ -79,19 +123,22 @@ export const dummyFlights = [
         arrivalAirport: "New York",
         stops: {
             onward: 2,
-            return: 1
+            return: 1,
         },
-        timings: {
-            departTime: "18:00",
-            arriveTime: "07:50",
-            duration: "11hr 50min",
-            departDate: "Sun, 29 Jan 2025",
-            arriveDate: "Mon, 30 Jan 2025",
-            from: "BLR - Terminal 1\nBangalore, India",
-            to: "JFK - Terminal 2\nNew York, USA",
-        },
+        timings: [
+            {
+                departTime: "18:00",
+                arriveTime: "07:50",
+                duration: "11hr 50min",
+                departDate: "Sun, 29 Jan 2025",
+                arriveDate: "Mon, 30 Jan 2025",
+                from: "BLR - Terminal 1\nBangalore, India",
+                to: "JFK - Terminal 2\nNew York, USA",
+            },
+        ],
     },
     {
+        id: 5,
         airline: "Skyreach Airline",
         code: "SKR - 8821",
         travelClass: "Economy",
@@ -102,19 +149,22 @@ export const dummyFlights = [
         arrivalAirport: "New York",
         stops: {
             onward: 1,
-            return: 2
+            return: 2,
         },
-        timings: {
-            departTime: "21:45",
-            arriveTime: "10:30",
-            duration: "12hr 45min",
-            departDate: "Sun, 29 Jan 2025",
-            arriveDate: "Mon, 30 Jan 2025",
-            from: "HYD - Terminal C\nHyderabad, India",
-            to: "JFK - Terminal 5\nNew York, USA",
-        },
+        timings: [
+            {
+                departTime: "21:45",
+                arriveTime: "10:30",
+                duration: "12hr 45min",
+                departDate: "Sun, 29 Jan 2025",
+                arriveDate: "Mon, 30 Jan 2025",
+                from: "HYD - Terminal C\nHyderabad, India",
+                to: "JFK - Terminal 5\nNew York, USA",
+            },
+        ],
     },
     {
+        id: 6,
         airline: "BlueJet Airline",
         code: "BJT - 9347",
         travelClass: "First Class",
@@ -125,19 +175,22 @@ export const dummyFlights = [
         arrivalAirport: "New York",
         stops: {
             onward: 0,
-            return: 0
+            return: 0,
         },
-        timings: {
-            departTime: "10:20",
-            arriveTime: "23:00",
-            duration: "12hr 40min",
-            departDate: "Mon, 30 Jan 2025",
-            arriveDate: "Mon, 30 Jan 2025",
-            from: "CCU - Terminal 2\nKolkata, India",
-            to: "JFK - Terminal 1\nNew York, USA",
-        },
+        timings: [
+            {
+                departTime: "10:20",
+                arriveTime: "23:00",
+                duration: "12hr 40min",
+                departDate: "Mon, 30 Jan 2025",
+                arriveDate: "Mon, 30 Jan 2025",
+                from: "CCU - Terminal 2\nKolkata, India",
+                to: "JFK - Terminal 1\nNew York, USA",
+            },
+        ],
     },
     {
+        id: 7,
         airline: "Nimbus Airline",
         code: "NMB - 2231",
         travelClass: "Business",
@@ -148,19 +201,22 @@ export const dummyFlights = [
         arrivalAirport: "New York",
         stops: {
             onward: 1,
-            return: 0
+            return: 0,
         },
-        timings: {
-            departTime: "23:50",
-            arriveTime: "12:30",
-            duration: "12hr 40min",
-            departDate: "Mon, 30 Jan 2025",
-            arriveDate: "Tue, 31 Jan 2025",
-            from: "MAA - Terminal 1\nChennai, India",
-            to: "JFK - Terminal 1\nNew York, USA",
-        },
+        timings: [
+            {
+                departTime: "23:50",
+                arriveTime: "12:30",
+                duration: "12hr 40min",
+                departDate: "Mon, 30 Jan 2025",
+                arriveDate: "Tue, 31 Jan 2025",
+                from: "MAA - Terminal 1\nChennai, India",
+                to: "JFK - Terminal 1\nNew York, USA",
+            },
+        ],
     },
     {
+        id: 8,
         airline: "Astra Airways",
         code: "ASA - 6124",
         travelClass: "Economy",
@@ -171,19 +227,22 @@ export const dummyFlights = [
         arrivalAirport: "New York",
         stops: {
             onward: 0,
-            return: 1
+            return: 1,
         },
-        timings: {
-            departTime: "01:20",
-            arriveTime: "12:45",
-            duration: "11hr 25min",
-            departDate: "Tue, 31 Jan 2025",
-            arriveDate: "Tue, 31 Jan 2025",
-            from: "AMD - Terminal 1\nAhmedabad, India",
-            to: "JFK - Terminal 4\nNew York, USA",
-        },
+        timings: [
+            {
+                departTime: "01:20",
+                arriveTime: "12:45",
+                duration: "11hr 25min",
+                departDate: "Tue, 31 Jan 2025",
+                arriveDate: "Tue, 31 Jan 2025",
+                from: "AMD - Terminal 1\nAhmedabad, India",
+                to: "JFK - Terminal 4\nNew York, USA",
+            },
+        ],
     },
     {
+        id: 9,
         airline: "Altura Airline",
         code: "ALT - 7779",
         travelClass: "Business",
@@ -194,19 +253,22 @@ export const dummyFlights = [
         arrivalAirport: "New York",
         stops: {
             onward: 2,
-            return: 2
+            return: 2,
         },
-        timings: {
-            departTime: "03:30",
-            arriveTime: "15:10",
-            duration: "11hr 40min",
-            departDate: "Tue, 31 Jan 2025",
-            arriveDate: "Tue, 31 Jan 2025",
-            from: "GOI - Terminal 2\nGoa, India",
-            to: "JFK - Terminal 1\nNew York, USA",
-        },
+        timings: [
+            {
+                departTime: "03:30",
+                arriveTime: "15:10",
+                duration: "11hr 40min",
+                departDate: "Tue, 31 Jan 2025",
+                arriveDate: "Tue, 31 Jan 2025",
+                from: "GOI - Terminal 2\nGoa, India",
+                to: "JFK - Terminal 1\nNew York, USA",
+            },
+        ],
     },
     {
+        id: 10,
         airline: "Velocia Express",
         code: "VEX - 9900",
         travelClass: "Economy",
@@ -217,16 +279,117 @@ export const dummyFlights = [
         arrivalAirport: "New York",
         stops: {
             onward: 1,
-            return: 1
+            return: 1,
         },
-        timings: {
-            departTime: "05:10",
-            arriveTime: "16:00",
-            duration: "10hr 50min",
-            departDate: "Tue, 31 Jan 2025",
-            arriveDate: "Tue, 31 Jan 2025",
-            from: "PNQ - Terminal 1\nPune, India",
-            to: "JFK - Terminal 5\nNew York, USA",
+        timings: [
+            {
+                departTime: "05:10",
+                arriveTime: "16:00",
+                duration: "10hr 50min",
+                departDate: "Tue, 31 Jan 2025",
+                arriveDate: "Tue, 31 Jan 2025",
+                from: "PNQ - Terminal 1\nPune, India",
+                to: "JFK - Terminal 5\nNew York, USA",
+            },
+        ],
+    },
+    // New flight with onward + return and layover
+    {
+        id: 11,
+        airline: "Cosmo Air",
+        code: "CMA - 3344",
+        travelClass: "Economy",
+        price: 16500,
+        refundable: false,
+        flightDetails: "Includes 1 carry-on, meals for purchase.",
+        departureAirport: "Chennai",
+        arrivalAirport: "London",
+        stops: {
+            onward: 1,
+            return: 1,
         },
+        layover: {
+            location: "Dubai, UAE",
+            duration: "2h 45m",
+        },
+        timings: [
+            {
+                from: "MAA - Terminal 1\nChennai, India",
+                to: "DXB - Terminal 3\nDubai, UAE",
+                departTime: "06:00",
+                arriveTime: "08:30",
+                departDate: "Wed, 12 Feb 2025",
+                arriveDate: "Wed, 12 Feb 2025",
+                duration: "4hr 30min",
+            },
+            {
+                from: "DXB - Terminal 3\nDubai, UAE",
+                to: "LHR - Terminal 5\nLondon, UK",
+                departTime: "11:15",
+                arriveTime: "15:30",
+                departDate: "Wed, 12 Feb 2025",
+                arriveDate: "Wed, 12 Feb 2025",
+                duration: "7hr 15min",
+            },
+        ],
+        returnTimings: [
+            {
+                from: "LHR - Terminal 5\nLondon, UK",
+                to: "DXB - Terminal 3\nDubai, UAE",
+                departTime: "16:30",
+                arriveTime: "23:30",
+                departDate: "Thu, 20 Feb 2025",
+                arriveDate: "Thu, 20 Feb 2025",
+                duration: "7hr 0min",
+            },
+            {
+                from: "DXB - Terminal 3\nDubai, UAE",
+                to: "MAA - Terminal 1\nChennai, India",
+                departTime: "02:00",
+                arriveTime: "07:00",
+                departDate: "Fri, 21 Feb 2025",
+                arriveDate: "Fri, 21 Feb 2025",
+                duration: "4hr 30min",
+            },
+        ],
+    },
+
+    // Another new flight with direct onward and return
+    {
+        id: 12,
+        airline: "Neo Wings",
+        code: "NWG - 7789",
+        travelClass: "First Class",
+        price: 42000,
+        refundable: true,
+        flightDetails: "First class seating, premium meals, priority boarding.",
+        departureAirport: "Bangalore",
+        arrivalAirport: "San Francisco",
+        stops: {
+            onward: 0,
+            return: 0,
+        },
+        timings: [
+            {
+                departTime: "09:00",
+                arriveTime: "19:30",
+                duration: "16hr 30min",
+                departDate: "Fri, 14 Mar 2025",
+                arriveDate: "Fri, 14 Mar 2025",
+                from: "BLR - Terminal 1\nBangalore, India",
+                to: "SFO - Terminal A\nSan Francisco, USA",
+            },
+        ],
+        returnTimings: [
+            {
+                departTime: "21:00",
+                arriveTime: "07:00",
+                duration: "16hr 0min",
+                departDate: "Sun, 22 Mar 2025",
+                arriveDate: "Mon, 23 Mar 2025",
+                from: "SFO - Terminal A\nSan Francisco, USA",
+                to: "BLR - Terminal 1\nBangalore, India",
+            },
+        ],
     },
 ];

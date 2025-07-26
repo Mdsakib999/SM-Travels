@@ -4,7 +4,6 @@ import MidBanner from "../Components/About/MidBanner";
 import Promotion from "../Components/About/Promotion";
 import Testimonial from "../Components/About/Testimonial";
 import Trends from "../Components/About/Trends";
-import FlightBooking from "./FlightBooking";
 
 const About = () => {
   return (
