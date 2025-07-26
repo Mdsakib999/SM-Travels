@@ -2,7 +2,7 @@ import { ArrowRight, User2 } from "lucide-react";
 
 const CheckOut = () => {
   return (
-    <div className="px-4 py-10">
+    <div className="px-4 py-10 mt-10">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10">
         {/* Left Side - Payment Form */}
         <div className="lg:w-2/3 w-full space-y-6">

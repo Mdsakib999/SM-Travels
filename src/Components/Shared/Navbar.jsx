@@ -9,7 +9,6 @@ export const Navbar = () => {
     { label: "Home", to: "/" },
     { label: "Flights", to: "/flights" },
     { label: "Hotels", to: "/hotels" },
-    { label: "Holiday Packages", to: "/holiday-packages" },
     { label: "About Us", to: "/about" },
     { label: "Contact Us", to: "/contact" },
   ];
