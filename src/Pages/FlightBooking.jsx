@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import { ArrowRight, User2, Eye, Plane, Minus, Plus } from "lucide-react";
 import { Link } from "react-router-dom";
+import {
+  countryOptions,
+  nationalityOptions,
+  titleOptions,
+} from "../utils/FlightBookingOptions";
 
 const FlightBooking = () => {
   const [adults, setAdults] = useState([
@@ -47,26 +52,6 @@ const FlightBooking = () => {
       )
     );
   };
-
-  const titleOptions = ["Mr", "Mrs", "Ms", "Dr", "Prof"];
-  const nationalityOptions = [
-    "Indian",
-    "American",
-    "British",
-    "Canadian",
-    "Australian",
-    "German",
-    "French",
-  ];
-  const countryOptions = [
-    "India",
-    "United States",
-    "United Kingdom",
-    "Canada",
-    "Australia",
-    "Germany",
-    "France",
-  ];
 
   return (
     <main className="min-h-screen bg-gray-50 mt-10">
@@ -343,7 +328,7 @@ const FlightBooking = () => {
                               onChange={(e) =>
                                 updateAdult(adult.id, "title", e.target.value)
                               }
-                              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                              className="w-full border border-gray-300 outline-none rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
                             >
                               {titleOptions.map((title) => (
                                 <option key={title} value={title}>
@@ -368,7 +353,7 @@ const FlightBooking = () => {
                                   e.target.value
                                 )
                               }
-                              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                              className="w-full border border-gray-300 outline-none rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
                               placeholder="Enter first name"
                             />
                           </div>
@@ -388,7 +373,7 @@ const FlightBooking = () => {
                                   e.target.value
                                 )
                               }
-                              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                              className="w-full border border-gray-300 outline-none rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
                               placeholder="Enter last name"
                             />
                           </div>
@@ -400,7 +385,7 @@ const FlightBooking = () => {
                             </label>
                             <input
                               type="date"
-                              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                              className="w-full border border-gray-300 outline-none rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
                             />
                           </div>
 
@@ -409,7 +394,7 @@ const FlightBooking = () => {
                             <label className="block text-sm font-medium text-gray-700 mb-1">
                               Nationality *
                             </label>
-                            <select className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500">
+                            <select className="w-full border border-gray-300 outline-none rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500">
                               {nationalityOptions.map((nationality) => (
                                 <option key={nationality} value={nationality}>
                                   {nationality}
@@ -425,7 +410,7 @@ const FlightBooking = () => {
                             </label>
                             <input
                               type="text"
-                              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                              className="w-full border border-gray-300 outline-none rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
                               placeholder="Enter passport number"
                             />
                           </div>
@@ -435,7 +420,7 @@ const FlightBooking = () => {
                             <label className="block text-sm font-medium text-gray-700 mb-1">
                               Passport Issuing Country *
                             </label>
-                            <select className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500">
+                            <select className="w-full border border-gray-300 outline-none rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500">
                               {countryOptions.map((country) => (
                                 <option key={country} value={country}>
                                   {country}
@@ -451,7 +436,7 @@ const FlightBooking = () => {
                             </label>
                             <input
                               type="date"
-                              className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                              className="w-full border border-gray-300 outline-none rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
                             />
                           </div>
                         </div>
@@ -473,7 +458,7 @@ const FlightBooking = () => {
                     </label>
                     <input
                       type="tel"
-                      className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                      className="w-full border border-gray-300 outline-none rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
                       placeholder="Enter mobile number"
                     />
                   </div>
@@ -483,7 +468,7 @@ const FlightBooking = () => {
                     </label>
                     <input
                       type="email"
-                      className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
+                      className="w-full border border-gray-300 outline-none rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-orange-500 focus:border-orange-500"
                       placeholder="Enter email address"
                     />
                   </div>
@@ -534,7 +519,7 @@ const FlightBooking = () => {
                   className="flex-1 border border-gray-300 outline-none rounded-md px-3 py-2 text-sm focus:ring focus:ring-orange-500 focus:border-orange-500"
                   placeholder="Coupon Code"
                 />
-                <button className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+                <button className="bg-orange-600 hover:bg-orange-500 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
                   Apply
                 </button>
               </div>
