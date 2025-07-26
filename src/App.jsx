@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import { Footer } from "./Components/Shared/Footer";
 import { Navbar } from "./Components/Shared/Navbar";
 import { ScrollToTop } from "./utils/ScrollToTop";
+import ScrollToTopButton from "./utils/ScrollToTopButton";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <ScrollToTop />
         <Outlet />
       </div>
+      <ScrollToTopButton />
       <Footer />
     </div>
   );

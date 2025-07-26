@@ -7,6 +7,7 @@ import About from "../Pages/About";
 import Hotel from "../Pages/Hotel";
 import CheckOut from "../Pages/CheckOut";
 import { Flights } from "../Pages/Flights";
+import FlightBooking from "../Pages/FlightBooking";
 
 export const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ export const router = createBrowserRouter([
       {
         path: "/checkout",
         element: <CheckOut />,
+      },
+      {
+        path: "/flight-booking",
+        element: <FlightBooking />,
       },
     ],
   },
