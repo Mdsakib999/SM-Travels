@@ -15,8 +15,6 @@ const About = () => {
       <Trends />
       <Gallery />
       <Testimonial />
-      {/* Imposter */}
-      <FlightBooking />
     </div>
   );
 };
