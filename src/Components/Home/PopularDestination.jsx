@@ -44,6 +44,38 @@ export const PopularDestination = () => {
       duration: "3 Days",
       img: "/assets/Destination/island.jpg",
     },
+    {
+      id: 1,
+      name: "Ghorepani Poon Hill Trek",
+      location: "Bhutan, Pokhara",
+      price: "569.00",
+      duration: "5 Days",
+      img: "/assets/Destination/ghorepani.jpg",
+    },
+    {
+      id: 2,
+      name: "Langtang Valley Trekking",
+      location: "Bhutan, India, Pokhara",
+      price: "600.00",
+      duration: "6 Days",
+      img: "/assets/Destination/langtang.jpg",
+    },
+    {
+      id: 3,
+      name: "Short Trek around Pokhara",
+      location: "Bhutan, India, Tibet",
+      price: "250.00",
+      duration: "6 Days",
+      img: "/assets/Destination/pokhara.jpg",
+    },
+    {
+      id: 4,
+      name: "Island Peak Climbing",
+      location: "Nepal, Pokhara, Tibet",
+      price: "569.00",
+      duration: "3 Days",
+      img: "/assets/Destination/island.jpg",
+    },
   ];
 
   return (

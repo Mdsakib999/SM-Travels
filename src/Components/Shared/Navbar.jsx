@@ -55,7 +55,7 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden fixed top-0 left-0 w-full h-full  backdrop-blur z-50 flex flex-col items-center justify-center gap-6 p-8">
+        <div className="lg:hidden fixed top-0 left-0 w-full h-screen bg-black/50  backdrop-blur z-50 flex flex-col items-center justify-center gap-6 p-8">
           <button
             onClick={() => setIsOpen(false)}
             className="absolute top-4 right-4 text-3xl text-orange-600"
@@ -73,7 +73,7 @@ export const Navbar = () => {
                 `text-xl font-medium ${
                   isActive
                     ? "text-orange-600 border-b-2 border-orange-600"
-                    : "text-gray-800 hover:text-orange-500"
+                    : "hover:text-orange-500 text-white"
                 }`
               }
             >

@@ -45,7 +45,7 @@ export const ResortBooking = () => {
       <div className="flex flex-col lg:flex-row justify-around gap-10">
         <div className="relative w-full h-full flex justify-center items-center order-1 md:order-2">
           {/* Card */}
-          <div className="bg-white rounded-2xl shadow-lg w-64  md:w-80 p-4 relative z-10 -top-24 -left-5 md:top-10 md:-left-16 lg:left-24">
+          <div className="bg-white rounded-2xl shadow-lg w-64  md:w-80 p-4 relative z-10 top-0 -left-5 md:top-10 md:-left-16 lg:left-24">
             <img
               src={HawaiiImg}
               alt="Trip to Hawaii"
@@ -112,7 +112,7 @@ export const ResortBooking = () => {
           </div>
 
           {/* Blurred Glow */}
-          <div className="absolute top-0 left-0 md:top-20 md:left-24 lg:top-20 lg:left-52 transform translate-x-1/2 -translate-y-1/2">
+          <div className="absolute top-10 left-1 md:top-20 md:left-24 lg:top-20 lg:left-52 transform translate-x-1/2 -translate-y-1/2">
             <div className="glow-circle"></div>
           </div>
 
