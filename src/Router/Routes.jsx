@@ -5,7 +5,9 @@ import { Error404 } from "../Components/Shared/404Error";
 import Contact from "../Pages/Contact";
 import About from "../Pages/About";
 import Hotel from "../Pages/Hotel";
+import CheckOut from "../Pages/CheckOut";
 import { Flights } from "../Pages/Flights";
+import FlightBooking from "../Pages/FlightBooking";
 
 export const router = createBrowserRouter([
   {
@@ -35,6 +37,14 @@ export const router = createBrowserRouter([
       {
         path: "/hotels",
         element: <Hotel />,
+      },
+      {
+        path: "/checkout",
+        element: <CheckOut />,
+      },
+      {
+        path: "/flight-booking",
+        element: <FlightBooking />,
       },
     ],
   },
