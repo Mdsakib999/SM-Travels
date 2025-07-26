@@ -11,7 +11,7 @@ import { FlightSearch } from "../Components/Home/FlightSearch";
 export const Home = () => {
   return (
     <div>
-      <div className="min-h-screen md:min-h-[40vh]">
+      <div className="min-h-screen md:min-h-[30vh]">
         <Banner bannerImage={"/assets/homeBanner.png"} />
       </div>
       <ResortBooking />
