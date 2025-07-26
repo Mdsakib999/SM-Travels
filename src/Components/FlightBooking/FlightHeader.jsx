@@ -1,6 +1,6 @@
 import { ArrowRight, Plane } from "lucide-react";
 
-export const Flightheader = ({ flight }) => {
+export const FlightHeader = ({ flight }) => {
   if (!flight || !flight.timings) return null;
 
   const firstSegment = Array.isArray(flight.timings)

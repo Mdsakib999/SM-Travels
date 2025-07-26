@@ -6,6 +6,7 @@ import {
 } from "../../FakeDb/FlightBookingOptions";
 import { Link } from "react-router-dom";
 import { Minus, Plus } from "lucide-react";
+import { TiDelete } from "react-icons/ti";
 
 export const TravelersDetailsForm = () => {
   const [adults, setAdults] = useState([
@@ -101,7 +102,7 @@ export const TravelersDetailsForm = () => {
                     }}
                     className="text-red-600 hover:text-red-800 p-1"
                   >
-                    <Minus size={16} />
+                    <TiDelete size={26} />
                   </button>
                 )}
                 {adult.isOpen ? <Minus size={16} /> : <Plus size={16} />}
