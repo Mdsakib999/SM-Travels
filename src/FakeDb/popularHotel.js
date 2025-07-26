@@ -71,7 +71,7 @@ export const hotelsData = {
       isMoreCard: true,
       image:
         "https://images.squarespace-cdn.com/content/v1/581932939f7456744432bed1/1548820131979-1NS21WT5HCITYRC54Y21/raffles+dubai.jpg",
-      label: "More popular properties in Chattogram",
+      label: "More popular Hotels in Chattogram",
     },
   ],
   "Cox's Bazar": [
