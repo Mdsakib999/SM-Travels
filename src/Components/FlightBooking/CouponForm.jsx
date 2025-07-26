@@ -1,4 +1,4 @@
-export const CoupunForm = () => {
+export const CouponForm = () => {
   return (
     <div className="bg-white rounded-lg shadow-sm p-4 sm:p-5">
       <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3">

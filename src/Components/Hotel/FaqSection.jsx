@@ -49,7 +49,7 @@ const FaqSection = () => {
       </div>
 
       {/* CTA Box */}
-      <div className="mt-16 bg-black text-orange-500 p-20 rounded-lg text-center">
+      <div className="mt-16 bg-black text-orange-500 p-10 md:p-20 rounded-lg text-center">
         <h3 className="text-lg sm:text-3xl font-semibold mb-4">
           Still have questions?
         </h3>
