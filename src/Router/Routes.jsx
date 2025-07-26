@@ -23,6 +23,14 @@ export const router = createBrowserRouter([
         element: <Flights />,
       },
       {
+        path: "/flight-booking/:id",
+        element: <FlightBooking />,
+      },
+      {
+        path: "/checkout",
+        element: <CheckOut />,
+      },
+      {
         path: "/contact",
         element: <Contact />,
       },
@@ -37,14 +45,6 @@ export const router = createBrowserRouter([
       {
         path: "/hotels",
         element: <Hotel />,
-      },
-      {
-        path: "/checkout",
-        element: <CheckOut />,
-      },
-      {
-        path: "/flight-booking",
-        element: <FlightBooking />,
       },
     ],
   },

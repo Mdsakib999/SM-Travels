@@ -1,4 +1,6 @@
 import { IoAirplaneOutline } from "react-icons/io5";
+import { SlPlane } from "react-icons/sl";
+
 export const FlightTimeDetails = ({
   departTime,
   arriveTime,
@@ -7,6 +9,7 @@ export const FlightTimeDetails = ({
   arriveDate,
   from,
   to,
+  reverse = false,
 }) => {
   return (
     <div className="flex items-center justify-between">
@@ -21,14 +24,22 @@ export const FlightTimeDetails = ({
 
       {/* Duration and plane icon */}
       <div className="flex-1 flex flex-col items-center mx-8">
-        <p className="text-sm md:text-lg  text-black mb-4 font-bold">
+        <p className="text-sm md:text-lg text-black mb-4 font-bold">
           {duration}
         </p>
         <div className="relative w-full max-w-32">
           <div className="h-0.5 bg-gray-300 w-full"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <div
+            className={
+              "absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            }
+          >
             <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
-              <IoAirplaneOutline size={24} className="text-white" />
+              {reverse ? (
+                <SlPlane size={22} className="text-white" />
+              ) : (
+                <IoAirplaneOutline size={24} className="text-white" />
+              )}
             </div>
           </div>
         </div>

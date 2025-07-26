@@ -1,18 +1,18 @@
 export const PriceSlider = ({ priceRange, onChange }) => {
-  const percentage = ((priceRange - 700) / (1500 - 700)) * 100;
+  const percentage = ((priceRange - 7) / 29) * 100;
 
   return (
     <div className="border-t-2 border-gray-200">
       <h4 className="font-semibold text-gray-900 mb-3 text-sm mt-2">Price</h4>
       <div className="flex justify-between text-xs text-gray-500 mb-2">
-        <span>700.00</span>
-        <span>1500.00</span>
+        <span>$7K</span>
+        <span>$36K</span>
       </div>
       <div className="relative">
         <input
           type="range"
-          min="700"
-          max="1500"
+          min="7"
+          max="36"
           value={priceRange}
           onChange={onChange}
           className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer slider z-0"
