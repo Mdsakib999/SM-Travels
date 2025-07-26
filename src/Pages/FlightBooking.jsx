@@ -35,7 +35,7 @@ const FlightBooking = () => {
           {/* Sidebar - Booking Summary */}
           <aside className="xl:w-1/3 w-full space-y-4 sm:space-y-6">
             {/* Price Breakdown */}
-            <Cart />
+            <Cart flight={flight} />
 
             {/* Offers & Discounts */}
             <CoupunForm />
