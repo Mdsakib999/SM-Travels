@@ -6,6 +6,7 @@ import {
   nationalityOptions,
   titleOptions,
 } from "../utils/FlightBookingOptions";
+import { TiDelete } from "react-icons/ti";
 
 const FlightBooking = () => {
   const [adults, setAdults] = useState([
@@ -302,9 +303,9 @@ const FlightBooking = () => {
                               e.stopPropagation();
                               removeAdult(adult.id);
                             }}
-                            className="text-red-600 hover:text-red-800 p-1"
+                            className="cursor-pointer text-red-600 hover:text-red-500 p-1"
                           >
-                            <Minus size={16} />
+                            <TiDelete size={30} />
                           </button>
                         )}
                         {adult.isOpen ? (
