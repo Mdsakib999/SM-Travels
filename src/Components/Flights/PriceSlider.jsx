@@ -5,9 +5,10 @@ export const PriceSlider = ({ priceRange, onChange }) => {
     <div className="border-t-2 border-gray-200">
       <h4 className="font-semibold text-gray-900 mb-3 text-sm mt-2">Price</h4>
       <div className="flex justify-between text-xs text-gray-500 mb-2">
-        <span>$7K</span>
+        <span>${priceRange}K</span>
         <span>$36K</span>
       </div>
+
       <div className="relative">
         <input
           type="range"
@@ -20,6 +21,7 @@ export const PriceSlider = ({ priceRange, onChange }) => {
             background: `linear-gradient(to right, #f97316 0%, #f97316 ${percentage}%, #e5e7eb ${percentage}%, #e5e7eb 100%)`,
           }}
         />
+
         <style jsx>{`
           .slider::-webkit-slider-thumb {
             appearance: none;

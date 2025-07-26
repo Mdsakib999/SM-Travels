@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { faqData } from "../../utils/popularHotel";
+import { faqData } from "../../FakeDb/popularHotel";
 
 const FaqSection = () => {
   const [openIndex, setOpenIndex] = useState(null);

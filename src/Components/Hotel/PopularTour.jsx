@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Star } from "lucide-react";
-import { internationalHotelsData } from "../../utils/popularHotel";
+import { internationalHotelsData } from "../../FakeDb/popularHotel";
 
 const PopularTour = () => {
   const tabs = Object.keys(internationalHotelsData);

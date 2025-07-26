@@ -3,7 +3,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Star } from "lucide-react";
-import { featuredToursData } from "../../utils/popularHotel";
+import { featuredToursData } from "../../FakeDb/popularHotel";
 import { customStyles } from "../../utils/customStyle";
 
 const FeaturedTours = () => {

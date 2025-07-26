@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import "swiper/css";
-import { citiesData } from "../../utils/popularHotel";
+import { citiesData } from "../../FakeDb/popularHotel";
 import { Autoplay } from "swiper/modules";
 
 const PopularCities = () => {

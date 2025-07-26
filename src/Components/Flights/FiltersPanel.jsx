@@ -44,9 +44,9 @@ export const FiltersPanel = () => {
       lateDeparture: false,
       nonStop: false,
     });
-    setPriceRange(700);
-    setOnwardStopType("Direct");
-    setReturnStopType("Direct");
+    setPriceRange(7);
+    setOnwardStopType("");
+    setReturnStopType("");
     setSelectedAirlines([]);
     setSelectedAirports([]);
   };
