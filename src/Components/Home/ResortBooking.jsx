@@ -42,7 +42,7 @@ export const ResortBooking = () => {
 
   return (
     <div className="w-full max-w-6xl mx-auto px-6  my-20 overflow-x-hidden md:overflow-visible relative">
-      <div className="flex flex-col lg:flex-row justify-around gap-10">
+      <div className="flex flex-col lg:flex-row justify-around gap-10 my-15 md:my-0">
         <div className="relative w-full h-full flex justify-center items-center order-1 md:order-2">
           {/* Card */}
           <div className="bg-white rounded-2xl shadow-lg w-64  md:w-80 p-4 relative z-10 top-0 -left-5 md:top-10 md:-left-16 lg:left-24">
@@ -117,7 +117,7 @@ export const ResortBooking = () => {
           </div>
 
           {/* background element */}
-          <div className="absolute md:left-0 md:-bottom-40 lg:-bottom-40 lg:left-36 transform translate-x-1/2 -translate-y-1/2">
+          <div className="hidden  lg:block absolute md:left-0 md:-bottom-40 lg:-bottom-40 lg:left-36 transform translate-x-1/2 -translate-y-1/2">
             <img
               src={backgroundElement}
               alt="Background Element"
@@ -125,14 +125,18 @@ export const ResortBooking = () => {
             />
           </div>
 
-          {/* Airplane */}
-          <div className="absolute top-0 right-0 md:left-44 md:top-40 lg:top-2 lg:right-0 transform translate-x-1/2 -translate-y-1/2 w-full md:w-1/2 xl:w-2/3">
-            <img
-              src={AeroplaneImg}
-              alt="Aeroplane"
-              className="w-full  h-auto object-contain"
-            />
-          </div>
+{/* Airplane */}
+<div
+  className="
+    hidden  lg:block absolute top-0 right-0 md:left-44 md:top-40 lg:top-2 lg:right-0 transform translate-x-1/2 -translate-y-1/2 w-full md:w-1/2 xl:w-2/3 "
+>
+  <img
+    src={AeroplaneImg}
+    alt="Aeroplane"
+    className="w-full h-auto object-contain"
+  />
+</div>
+
         </div>
 
         <div className="space-y-6 order-2 md:order-1">
