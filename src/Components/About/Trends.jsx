@@ -1,8 +1,37 @@
+import CountUp from "react-countup";
+import { useInView } from "react-intersection-observer";
+
+const tourData = [
+  {
+    label: "Leisure & Getaways",
+    percent: 75,
+    color: "#FF7F50",
+  },
+  {
+    label: "Honeymoon Retreats",
+    percent: 55,
+    color: "#FF69B4",
+  },
+  {
+    label: "Festive Events",
+    percent: 40,
+    color: "#6A5ACD",
+  },
+];
+
 const Trends = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.5,
+  });
+
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+    <section
+      ref={ref}
+      className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20"
+    >
       <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
-        {/* Image Section */}
+        {/* Image */}
         <div className="w-full md:w-1/2">
           <img
             src="./assets/about/leftImage.png"
@@ -11,7 +40,7 @@ const Trends = () => {
           />
         </div>
 
-        {/* Text and Icons Section */}
+        {/* Text + Animated Counters */}
         <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
           <p className="text-orange-600 font-semibold uppercase tracking-wide">
             Trend
@@ -24,22 +53,53 @@ const Trends = () => {
             From breathtaking landscapes to cultural gems, our plans ensure a
             seamless and memorable experience for every traveler.
           </p>
-          <div className="flex justify-center md:justify-start items-center gap-4 sm:gap-6 lg:gap-8 mt-8">
-            <img
-              src="./assets/about/vacation.png"
-              alt="Vacation Tours"
-              className="w-16 h-16 sm:w-28 sm:h-28 object-contain hover:scale-105 transition-transform"
-            />
-            <img
-              src="./assets/about/Honeymoon.png"
-              alt="Honeymoon Packages"
-              className="w-16 h-16 sm:w-28 sm:h-28 object-contain hover:scale-105 transition-transform"
-            />
-            <img
-              src="./assets/about/event.png"
-              alt="Event Tours"
-              className="w-16 h-16 sm:w-28 sm:h-28 object-contain hover:scale-105 transition-transform"
-            />
+
+          <div className="flex flex-col sm:flex-row gap-6 mt-8 justify-center md:justify-start md:pr-10">
+            {tourData.map((item, idx) => {
+              const radius = 50;
+              const circumference = 2 * Math.PI * radius;
+              const offset =
+                circumference - (item.percent / 100) * circumference;
+
+              return (
+                <div key={idx} className="flex flex-col items-center space-y-2">
+                  <svg
+                    width="120"
+                    height="120"
+                    className="md:w-[116px] lg:w-[120px] md:h-[116px] lg:h-[120px] rotate-[-90deg]"
+                  >
+                    <circle
+                      cx="60"
+                      cy="60"
+                      r={radius}
+                      fill="none"
+                      stroke="#e5e7eb"
+                      strokeWidth="12"
+                    />
+                    <circle
+                      cx="60"
+                      cy="60"
+                      r={radius}
+                      fill="none"
+                      stroke={item.color}
+                      strokeWidth="12"
+                      strokeDasharray={circumference}
+                      strokeDashoffset={inView ? offset : circumference}
+                      style={{
+                        transition: "stroke-dashoffset 2s ease",
+                      }}
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                  <span className="absolute text-xl font-bold mt-12">
+                    {inView && <CountUp end={item.percent} duration={3} />}%
+                  </span>
+                  <p className="text-sm text-gray-700 font-medium text-center max-w-[100px]">
+                    {item.label}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
