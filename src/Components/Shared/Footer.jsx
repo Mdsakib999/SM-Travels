@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 
 import FooterImage from "/assets/FooterImg.png";
-import AmericanexpressImg from "/assets/AmericanExpress.png";
+import AmericanExpressImg from "/assets/AmericanExpress.png";
 import MastercardImg from "/assets/MasterCard.png";
 import VisaImg from "/assets/Visa.png";
 import PaypalImg from "/assets/Paypal.png";
@@ -135,11 +135,19 @@ export const Footer = () => {
                 <span>{item.text}</span>
               </li>
             ))}
-            <li className="flex gap-2 mt-2 overflow-hidden">
-              <img src={VisaImg} alt="Visa" className="w-10" />
-              <img src={MastercardImg} alt="MasterCard" className="w-10" />
-              <img src={AmericanexpressImg} alt="Amex" className="w-10" />
-              <img src={PaypalImg} alt="Discover" className="w-10" />
+            <li className="flex gap-2 mt-2">
+              <img src={VisaImg} alt="Visa" className="w-8 sm:w-10" />
+              <img
+                src={MastercardImg}
+                alt="MasterCard"
+                className="w-8 sm:w-10"
+              />
+              <img
+                src={AmericanExpressImg}
+                alt="Amex"
+                className="w-8 sm:w-10"
+              />
+              <img src={PaypalImg} alt="Discover" className="w-8 sm:w-10" />
             </li>
           </ul>
         </div>

@@ -54,7 +54,7 @@ const Trends = () => {
             seamless and memorable experience for every traveler.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 mt-8 justify-center md:justify-start md:pr-10">
+          <div className="flex flex-col items-center sm:flex-row gap-6 mt-8 justify-center md:pr-10">
             {tourData.map((item, idx) => {
               const radius = 50;
               const circumference = 2 * Math.PI * radius;
@@ -62,11 +62,13 @@ const Trends = () => {
                 circumference - (item.percent / 100) * circumference;
 
               return (
-                <div key={idx} className="flex flex-col items-center space-y-2">
+                <div
+                  key={idx}
+                  className="relative w-[160px] h-[160px] flex flex-col items-center justify-center"
+                >
                   <svg
-                    width="120"
-                    height="120"
-                    className="md:w-[116px] lg:w-[120px] md:h-[116px] lg:h-[120px] rotate-[-90deg]"
+                    viewBox="0 0 120 120"
+                    className="w-full h-full rotate-[-90deg]"
                   >
                     <circle
                       cx="60"
@@ -91,9 +93,13 @@ const Trends = () => {
                       strokeLinecap="round"
                     />
                   </svg>
-                  <span className="absolute text-xl font-bold mt-12">
+
+                  {/* Centered Percentage Text */}
+                  <span className="absolute text-sm md:text-xl font-bold mb-8 lg:mb-5">
                     {inView && <CountUp end={item.percent} duration={3} />}%
                   </span>
+
+                  {/* Label */}
                   <p className="text-sm text-gray-700 font-medium text-center max-w-[100px]">
                     {item.label}
                   </p>
