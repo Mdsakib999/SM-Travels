@@ -41,7 +41,7 @@ export const ResortBooking = () => {
   ];
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-6  my-20 overflow-x-hidden md:overflow-visible relative">
+    <div className="-z-50 w-full max-w-6xl mx-auto px-6  my-20 overflow-x-hidden md:overflow-visible relative pt-10 md:pt-0 lg:pt-20">
       <div className="flex flex-col lg:flex-row justify-around gap-10">
         <div className="relative w-full h-full flex justify-center items-center order-1 md:order-2">
           {/* Card */}
@@ -126,11 +126,11 @@ export const ResortBooking = () => {
           </div>
 
           {/* Airplane */}
-          <div className="absolute top-0 right-0 md:left-44 md:top-40 lg:top-2 lg:right-0 transform translate-x-1/2 -translate-y-1/2 w-full md:w-1/2 xl:w-2/3">
+          <div className="hidden sm:block absolute top-0 right-0 md:left-44 md:top-40 lg:top-2 lg:right-0 transform translate-x-1/2 -translate-y-1/2 w-full md:w-1/2 xl:w-2/">
             <img
               src={AeroplaneImg}
               alt="Aeroplane"
-              className="w-full  h-auto object-contain"
+              className="w-full h-auto object-contain"
             />
           </div>
         </div>
@@ -138,7 +138,7 @@ export const ResortBooking = () => {
         <div className="space-y-6 order-2 md:order-1">
           <PreHeading>Fast & Easy</PreHeading>
           <h2 className="text-4xl font-extrabold text-gray-800 leading-snug">
-            Get Your Favourite <br /> Resort Bookings
+            Get Your Favorite <br /> Resort Bookings
           </h2>
 
           <div className="space-y-5">
