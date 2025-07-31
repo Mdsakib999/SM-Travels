@@ -42,7 +42,7 @@ export const Banner = ({ bannerImage }) => {
 
         <section className="bg-white space-y-5 sm:space-y-8 rounded-xl shadow-lg text-black p-4 sm:p-6 md:p-10">
           {/* Category Icons */}
-          <ul className="flex flex-wrap justify-center sm:justify-start items-center gap-4 pb-3 border-b">
+          <ul className="flex flex-wrap justify-center sm:justify-start items-center gap-4 pb-3 border-b border-gray-300">
             <li className="flex items-center gap-x-2">
               <BiSolidPlaneAlt className="text-orange-600" size={20} />
               <span className="text-xs sm:text-sm font-semibold">Flight</span>

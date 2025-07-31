@@ -47,6 +47,7 @@ export const TourCategories = () => {
           spaceBetween={30}
           slidesPerView={5}
           slidesPerGroup={5}
+
           loop={true}
           autoplay={{
             delay: 3000,
@@ -62,12 +63,13 @@ export const TourCategories = () => {
             640: {
               slidesPerView: 2,
               slidesPerGroup: 2,
-              spaceBetween: 20,
+              spaceBetween: 10,
             },
             768: {
               slidesPerView: 5,
               slidesPerGroup: 5,
-              spaceBetween: 5,
+              spaceBetween: 20,
+              
             },
             1024: {
               slidesPerView: 5,
