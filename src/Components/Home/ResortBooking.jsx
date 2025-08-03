@@ -202,7 +202,7 @@ export const ResortBooking = () => {
         <div className="space-y-6 order-2 md:order-1">
           <PreHeading>Fast & Easy</PreHeading>
           <h2 className="text-4xl font-extrabold text-gray-800 leading-snug">
-            Get Your Favourite <br /> Resort Bookings
+            Get Your Favorite <br /> Resort Bookings
           </h2>
 
           <div className="space-y-5">

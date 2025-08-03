@@ -41,8 +41,8 @@ export const DetailsModal = ({ selectedFlight, setSelectedFlight }) => {
           </p>
           <p>
             <strong>Duration:</strong>{" "}
-            {parseInt(selectedFlight.timings[0].duration) +
-              parseInt(selectedFlight.timings[1].duration)}{" "}
+            {parseInt(selectedFlight.timings[0]?.duration) +
+              parseInt(selectedFlight.timings[1]?.duration)}{" "}
             hrs
           </p>
 

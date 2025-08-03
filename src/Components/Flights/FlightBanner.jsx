@@ -19,13 +19,13 @@ export const FlightBanner = () => {
   };
 
   return (
-    <div className="relative w-full md:mb-[550px] mb-[400px] lg:mb-60">
+    <div className="relative w-full mb-[550px] sm:mb-[350px] lg:mb-60">
       <img
-        className="brightness-75 w-full h-[300px] md:h-[400px] lg:h-[500px] object-cover object-center"
+        className="brightness-75 w-full h-[300px] sm:h-[400px] md:h-[400px] object-cover object-center"
         src={bgImg}
         alt="Banner"
       />
-      <div className="absolute top-[18%]  md:top-[20%] lg:top-[70%] left-1/2 transform -translate-x-1/2 w-full max-w-7xl px-2 sm:px-4">
+      <div className="absolute top-[50%] left-1/2 transform -translate-x-1/2 w-full max-w-7xl px-2 sm:px-4">
         {/* Header */}
         <header className="space-y-1 sm:space-y-2 mb-3 sm:mb-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white text-center mb-12 tracking-tight">

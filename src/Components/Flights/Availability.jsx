@@ -5,7 +5,7 @@ export const Availability = () => {
     <div className="max-w-7xl mx-auto px-3">
       <div className="flex flex-col gap-3">
         <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold">
-          9 Flight Availabile
+          9 Flight Available
         </h1>
 
         <div className="flex gap-3 items-center text-gray-600">
