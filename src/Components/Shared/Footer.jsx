@@ -20,10 +20,10 @@ import { FooterSection } from "./FooterCoulmn";
 export const Footer = () => {
   const socialLinks = [
     { Icon: FaFacebookF, color: "hover:bg-blue-500" },
-    { Icon: FaTwitter, color: "hover:bg-blue-800" },
-    { Icon: FaInstagram, color: "hover:bg-pink-600" },
+    { Icon: FaTwitter, color: "hover:bg-cyan-400" },
+    { Icon: FaInstagram, color: "hover:bg-rose-600" },
     { Icon: FaYoutube, color: "hover:bg-red-600" },
-    { Icon: FaLinkedin, color: "hover:bg-blue-700" },
+    { Icon: FaLinkedin, color: "hover:bg-blue-400" },
     { Icon: FaPinterestP, color: "hover:bg-red-600" },
   ];
 
@@ -81,11 +81,7 @@ export const Footer = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
         {/* Branding and Email Signup */}
         <div className="col-span-2 md:col-span-4 lg:col-span-1">
-          <img
-            src="/assets/logo.png"
-            alt="SM Travels Logo"
-            className="mb-4 w-32"
-          />
+          <img src="/assets/logo.png" alt="SM Travel" className="mb-4 w-32" />
           <p className="text-sm leading-relaxed mb-6">
             Pharetra maecenas felisey vestibulum convallis mollis nullam congue
             sittle rivers of Finland Quebec.
@@ -108,7 +104,7 @@ export const Footer = () => {
             {socialLinks.map(({ Icon, color }, i) => (
               <div
                 key={i}
-                className={`lg:h-8 lg:w-8 md:h-12 md:w-12 rounded-full border border-zinc-600 flex items-center justify-center hover:border-white ${color} transition-all duration-300 cursor-pointer group p-2`}
+                className={`lg:h-8 lg:w-8 md:h-12 md:w-12 rounded-full border border-zinc-600 hover:border-none flex items-center justify-center ${color} transition-all duration-300 cursor-pointer group p-2`}
               >
                 <Icon size={16} className="group-hover:text-white" />
               </div>

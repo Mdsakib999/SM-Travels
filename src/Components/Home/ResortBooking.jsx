@@ -3,11 +3,12 @@ import { FaTaxi, FaRegMap, FaPaperPlane, FaRegHeart } from "react-icons/fa";
 import { FaVectorSquare } from "react-icons/fa6";
 import { ImLeaf } from "react-icons/im";
 import { PiCityLight } from "react-icons/pi";
-import AeroplaneImg from "/assets/Aeroplane.png";
+import AeroPlaneImg from "/assets/AeroPlane.png";
 import HawaiiImg from "/assets/Hawaii.jpg";
 import backgroundElement from "/assets/BackgroundElement.png";
 import RomeImg from "/assets/Rome.jpg";
 import { PreHeading } from "../Shared/PreHeading";
+
 export const ResortBooking = () => {
   const menuItems = [
     {
@@ -124,25 +125,24 @@ export const ResortBooking = () => {
             />
           </div>
 
-
-{/* Airplane */}
-<div
-  className="
+          {/* Airplane */}
+          <div
+            className="
     hidden  lg:block absolute top-0 right-0 md:left-44 md:top-40 lg:top-2 lg:right-0 transform translate-x-1/2 -translate-y-1/2 w-full md:w-1/2 xl:w-2/3 "
->
-  <img
-    src={AeroplaneImg}
-    alt="Aeroplane"
-    className="w-full h-auto object-contain"
-  />
-</div>
-{/* Test */}
-<div className="h-[200px] w-[200px] bg-transparent relative text-white">
-  {/* Circuit Board – transparent overlay */}
-  <div
-    className="absolute inset-0 z-0 pointer-events-none"
-    style={{
-      backgroundImage: `
+          >
+            <img
+              src={AeroPlaneImg}
+              alt="Aeroplane"
+              className="w-full h-auto object-contain"
+            />
+          </div>
+          {/* Test */}
+          <div className="h-[200px] w-[200px] bg-transparent relative text-white">
+            {/* Circuit Board – transparent overlay */}
+            <div
+              className="absolute inset-0 z-0 pointer-events-none"
+              style={{
+                backgroundImage: `
         repeating-linear-gradient(
           0deg,
           transparent,
@@ -164,39 +164,37 @@ export const ResortBooking = () => {
           transparent 2px
         )
       `,
-      backgroundSize: "40px 40px, 40px 40px, 40px 40px, 40px 40px",
-    }}
-  />
-  <span
-    className="absolute text-red-400 font-mono text-sm"
-    style={{ top: 20, left: 20 }}
-  >
-    +
-  </span>
-  <span
-    className="absolute text-white font-mono text-sm"
-    style={{ top: 20, left: 60 }}
-  >
-    +
-  </span>
-  <span
-    className="absolute text-blue-400 font-mono text-sm"
-    style={{ top: 60, left: 100 }}
-  >
-    +
-  </span>
-  <span
-    className="absolute text-red-400 font-mono text-sm"
-    style={{ top: 100, left: 140 }}
-  >
-    +
-  </span>
+                backgroundSize: "40px 40px, 40px 40px, 40px 40px, 40px 40px",
+              }}
+            />
+            <span
+              className="absolute text-red-400 font-mono text-sm"
+              style={{ top: 20, left: 20 }}
+            >
+              +
+            </span>
+            <span
+              className="absolute text-white font-mono text-sm"
+              style={{ top: 20, left: 60 }}
+            >
+              +
+            </span>
+            <span
+              className="absolute text-blue-400 font-mono text-sm"
+              style={{ top: 60, left: 100 }}
+            >
+              +
+            </span>
+            <span
+              className="absolute text-red-400 font-mono text-sm"
+              style={{ top: 100, left: 140 }}
+            >
+              +
+            </span>
 
-  {/* Your real content goes here */}
-  <div className="relative z-10 p-8">
-    {/* … */}
-  </div>
-</div>
+            {/* Your real content goes here */}
+            <div className="relative z-10 p-8">{/* … */}</div>
+          </div>
         </div>
 
         <div className="space-y-6 order-2 md:order-1">

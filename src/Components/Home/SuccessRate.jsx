@@ -11,14 +11,20 @@ export const SuccessRate = () => {
   const { ref, inView } = useInView({ triggerOnce: false });
 
   const menuItems = [
-    { id: 1, title: 12, desc: "Years Experience", suffix: "" },
+    { id: 1, title: 12, desc: "Years Experience", suffix: "+" },
     { id: 2, title: 97, desc: "Retention Rate", suffix: "%" },
-    { id: 3, title: 8000, desc: "Tour Completed", suffix: "k", divideBy: 1000 },
+    {
+      id: 3,
+      title: 8000,
+      desc: "Tour Completed",
+      suffix: "k+",
+      divideBy: 1000,
+    },
     {
       id: 4,
       title: 19000,
-      desc: "Happy Travellers",
-      suffix: "k",
+      desc: "Happy Travelers",
+      suffix: "k+",
       divideBy: 1000,
     },
   ];

@@ -21,7 +21,7 @@ export const FlightBrands = () => {
   ];
 
   return (
-    <div className="overflow-hidden text-center my-20">
+    <div className="overflow-hidden text-center my-20 md:my-32 lg:my-40">
       <Marquee
         pauseOnHover={true}
         speed={60}
