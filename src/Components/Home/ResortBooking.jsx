@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { BiSwim } from "react-icons/bi";
 import { FaTaxi, FaRegMap, FaPaperPlane, FaRegHeart } from "react-icons/fa";
 import { FaVectorSquare } from "react-icons/fa6";
@@ -42,8 +41,8 @@ export const ResortBooking = () => {
   ];
 
   return (
-    <div className="-z-50 w-full max-w-6xl mx-auto px-6  my-20 overflow-x-hidden md:overflow-visible relative pt-10 md:pt-0 lg:pt-20">
-      <div className="flex flex-col lg:flex-row justify-around gap-10">
+    <div className="w-full max-w-6xl mx-auto px-6  my-20 overflow-x-hidden md:overflow-visible relative">
+      <div className="flex flex-col lg:flex-row justify-around gap-10 my-15 md:my-0">
         <div className="relative w-full h-full flex justify-center items-center order-1 md:order-2">
           {/* Card */}
           <div className="bg-white rounded-2xl shadow-lg w-64  md:w-80 p-4 relative z-10 top-0 -left-5 md:top-10 md:-left-16 lg:left-24">
@@ -118,7 +117,7 @@ export const ResortBooking = () => {
           </div>
 
           {/* background element */}
-          <div className="absolute md:left-0 md:-bottom-40 lg:-bottom-40 lg:left-36 transform translate-x-1/2 -translate-y-1/2">
+          <div className="hidden  lg:block absolute md:left-0 md:-bottom-40 lg:-bottom-40 lg:left-36 transform translate-x-1/2 -translate-y-1/2">
             <img
               src={backgroundElement}
               alt="Background Element"
@@ -127,12 +126,74 @@ export const ResortBooking = () => {
           </div>
 
           {/* Airplane */}
-          <div className="hidden sm:block absolute top-0 right-0 md:left-44 md:top-40 lg:top-2 lg:right-0 transform translate-x-1/2 -translate-y-1/2 w-full md:w-1/2 xl:w-2/">
+          <div
+            className="
+    hidden  lg:block absolute top-0 right-0 md:left-44 md:top-40 lg:top-2 lg:right-0 transform translate-x-1/2 -translate-y-1/2 w-full md:w-1/2 xl:w-2/3 "
+          >
             <img
               src={AeroPlaneImg}
-              alt="AeroPlane"
+              alt="Aeroplane"
               className="w-full h-auto object-contain"
             />
+          </div>
+          {/* Test */}
+          <div className="h-[200px] w-[200px] bg-transparent relative text-white">
+            {/* Circuit Board – transparent overlay */}
+            <div
+              className="absolute inset-0 z-0 pointer-events-none"
+              style={{
+                backgroundImage: `
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 19px,
+          rgba(189, 194, 191, 0.15) 19px,
+          rgba(172, 172, 172, 0) 20px
+        ),
+        repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 19px,
+         rgba(189, 194, 191, 0.15) 19px,
+          rgba(34, 197, 94, 0) 20px
+        ),
+
+        radial-gradient(
+          circle at 40px 40px,
+          rgba(16, 185, 129, 0.18) 2px,
+          transparent 2px
+        )
+      `,
+                backgroundSize: "40px 40px, 40px 40px, 40px 40px, 40px 40px",
+              }}
+            />
+            <span
+              className="absolute text-red-400 font-mono text-sm"
+              style={{ top: 20, left: 20 }}
+            >
+              +
+            </span>
+            <span
+              className="absolute text-white font-mono text-sm"
+              style={{ top: 20, left: 60 }}
+            >
+              +
+            </span>
+            <span
+              className="absolute text-blue-400 font-mono text-sm"
+              style={{ top: 60, left: 100 }}
+            >
+              +
+            </span>
+            <span
+              className="absolute text-red-400 font-mono text-sm"
+              style={{ top: 100, left: 140 }}
+            >
+              +
+            </span>
+
+            {/* Your real content goes here */}
+            <div className="relative z-10 p-8">{/* … */}</div>
           </div>
         </div>
 

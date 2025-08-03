@@ -16,18 +16,20 @@ export const TourCategories = () => {
     { id: 8, name: "Cruises", img: "/assets/Categories/cruise.jpg" },
     { id: 9, name: "Hiking", img: "/assets/Categories/hiking.jpg" },
     { id: 10, name: "Airbirds", img: "/assets/Categories/airbirds.jpg" },
-    { id: 1, name: "Wildlife", img: "/assets/Categories/wildlife.jpg" },
-    { id: 2, name: "Walking", img: "/assets/Categories/walking.jpg" },
-    { id: 3, name: "Cruises", img: "/assets/Categories/cruise.jpg" },
-    { id: 4, name: "Hiking", img: "/assets/Categories/hiking.jpg" },
+    { id: 11, name: "Wildlife", img: "/assets/Categories/wildlife.jpg" },
+    { id: 12, name: "Walking", img: "/assets/Categories/walking.jpg" },
+    { id: 13, name: "Cruises", img: "/assets/Categories/cruise.jpg" },
+    { id: 14, name: "Hiking", img: "/assets/Categories/hiking.jpg" },
     { id: 5, name: "Airbirds", img: "/assets/Categories/airbirds.jpg" },
     { id: 6, name: "Wildlife", img: "/assets/Categories/wildlife.jpg" },
     { id: 7, name: "Walking", img: "/assets/Categories/walking.jpg" },
     { id: 8, name: "Cruises", img: "/assets/Categories/cruise.jpg" },
-    { id: 9, name: "Hiking", img: "/assets/Categories/hiking.jpg" },
-    { id: 10, name: "Airbirds", img: "/assets/Categories/airbirds.jpg" },
+    { id: 15, name: "Hiking", img: "/assets/Categories/hiking.jpg" },
+    { id: 16, name: "Airbirds", img: "/assets/Categories/airbirds.jpg" },
   ];
   const swiperRef = useRef(null);
+  
+
 
   return (
     <div
@@ -45,6 +47,7 @@ export const TourCategories = () => {
           spaceBetween={30}
           slidesPerView={5}
           slidesPerGroup={5}
+
           loop={true}
           autoplay={{
             delay: 3000,
@@ -60,12 +63,13 @@ export const TourCategories = () => {
             640: {
               slidesPerView: 2,
               slidesPerGroup: 2,
-              spaceBetween: 20,
+              spaceBetween: 10,
             },
             768: {
               slidesPerView: 5,
               slidesPerGroup: 5,
-              spaceBetween: 5,
+              spaceBetween: 20,
+              
             },
             1024: {
               slidesPerView: 5,
