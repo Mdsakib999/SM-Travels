@@ -4,11 +4,12 @@ import { FaTaxi, FaRegMap, FaPaperPlane, FaRegHeart } from "react-icons/fa";
 import { FaVectorSquare } from "react-icons/fa6";
 import { ImLeaf } from "react-icons/im";
 import { PiCityLight } from "react-icons/pi";
-import AeroplaneImg from "/assets/Aeroplane.png";
+import AeroPlaneImg from "/assets/AeroPlane.png";
 import HawaiiImg from "/assets/Hawaii.jpg";
 import backgroundElement from "/assets/BackgroundElement.png";
 import RomeImg from "/assets/Rome.jpg";
 import { PreHeading } from "../Shared/PreHeading";
+
 export const ResortBooking = () => {
   const menuItems = [
     {
@@ -128,8 +129,8 @@ export const ResortBooking = () => {
           {/* Airplane */}
           <div className="hidden sm:block absolute top-0 right-0 md:left-44 md:top-40 lg:top-2 lg:right-0 transform translate-x-1/2 -translate-y-1/2 w-full md:w-1/2 xl:w-2/">
             <img
-              src={AeroplaneImg}
-              alt="Aeroplane"
+              src={AeroPlaneImg}
+              alt="AeroPlane"
               className="w-full h-auto object-contain"
             />
           </div>
