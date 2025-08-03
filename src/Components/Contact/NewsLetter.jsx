@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 const NewsLetter = () => {
   return (
-    <div className="relative w-full max-w-3xl lg:max-w-5xl mx-auto rounded-lg shadow-2xl shadow-gray-500 mb-20">
+    <div className="relative w-full max-w-3xl lg:max-w-5xl mx-auto rounded-lg shadow-2xl shadow-gray-500 my-20">
       <img
         className="brightness-50 h-64 md:h-80 lg:h-96 w-full max-w-6xl mx-auto mb-10 object-cover rounded-lg"
         src="/assets/news.jpg"
